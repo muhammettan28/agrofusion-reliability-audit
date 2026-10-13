@@ -1,0 +1,46 @@
+{
+  "fold": "2018_train_2022_test",
+  "counts": {
+    "train": 91499,
+    "validation": 16143,
+    "test": 103841
+  },
+  "parameters": {
+    "n_estimators": 220,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "min_child_weight": 3.0,
+    "subsample": 0.85,
+    "colsample_bytree": 0.85,
+    "reg_lambda": 1.0,
+    "max_bin": 256,
+    "tree_method": "hist",
+    "device": "cpu",
+    "n_jobs": 2,
+    "random_state": 42,
+    "eval_metric": "mlogloss"
+  },
+  "versions": {
+    "python": "3.14.6",
+    "numpy": "2.4.6",
+    "polars": "1.44.2",
+    "sklearn": "1.9.0",
+    "xgboost": "3.4.1"
+  },
+  "class_weighting": false,
+  "preprocessing": "training-only median imputation and zero-variance removal",
+  "test_used_for_training_or_selection": false,
+  "models": {
+    "family": {
+      "posterior_sha256": "db7f9a51ef43b1e86a67bb9ff69d3d6af1e3f0bb41f70ab90596e9492dc874fb",
+      "wall_seconds_this_run": 243.84953595499792
+    },
+    "major": {
+      "posterior_sha256": "99280e42fefde2566c510a8a4cd26e40947c6ab499f6576a362adde3b7ed0f5e",
+      "wall_seconds_this_run": 64.34310634099893
+    },
+    "conditional": {
+      "posterior_sha256": "449073a18d26e65885a7b0eb09ca2d8afef148b8ae86e7be986b401a788714a3"
+    }
+  }
+}

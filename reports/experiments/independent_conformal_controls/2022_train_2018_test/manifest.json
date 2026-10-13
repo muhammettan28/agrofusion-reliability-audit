@@ -1,0 +1,226 @@
+{
+  "fold": "2022_train_2018_test",
+  "alpha": 0.1,
+  "base_distribution": "fine probabilities renormalized over fixed 13-family taxonomy",
+  "calibration_class_support": {
+    "B1": 5657,
+    "B2": 434,
+    "B3": 1243,
+    "B4": 285,
+    "B5": 1306,
+    "B7": 515,
+    "B8": 616,
+    "Bx": 17,
+    "E1": 396,
+    "E2": 5621,
+    "E3": 824,
+    "F2": 2,
+    "F4": 737
+  },
+  "canonical_class_thresholds": {
+    "B1": 0.6404434442520142,
+    "B2": 0.9807798862457275,
+    "B3": 0.9382655620574951,
+    "B4": 0.9907520413398743,
+    "B5": 0.9586642384529114,
+    "B7": 0.9736253619194031,
+    "B8": 0.9423784613609314,
+    "Bx": 0.999964714050293,
+    "E1": 0.9859173893928528,
+    "E2": 0.6180309057235718,
+    "E3": 0.9768553376197815,
+    "F2": "+inf",
+    "F4": 0.9748609662055969
+  },
+  "density": {
+    "domain_training_source": 8000,
+    "domain_training_target": 8000,
+    "ratio_source": 8000,
+    "ratio_target": 8000,
+    "bias_source": 8000,
+    "bin_count": 20,
+    "bin_edges": [
+      2.99407615145242e-08,
+      1.897038856668588e-07,
+      6.092033828508649e-07,
+      1.4092638593865565e-06,
+      2.844914831712231e-06,
+      5.290365470500549e-06,
+      8.766103701418616e-06,
+      1.37844914206653e-05,
+      2.132256895492901e-05,
+      3.158655636070762e-05,
+      4.7788801202841645e-05,
+      7.265883323270828e-05,
+      0.00011127768593723887,
+      0.00017689702508505434,
+      0.0002930022310465574,
+      0.0004914667690172807,
+      0.000945304497145117,
+      0.0021843449445441373,
+      0.00833269567228855
+    ],
+    "bin_ratios": [
+      0.0045662100456621,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.002415458937198068,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      19.843672456575682
+    ],
+    "target_labels_used": false
+  },
+  "clipping": [
+    {
+      "method": "weighted_histogram",
+      "bound": null,
+      "estimated_bias_inflation": 0.0,
+      "effective_target": 0.9,
+      "calibration_effective_sample_size": 835.6623610221654,
+      "infinity_threshold_rate": 0.0
+    },
+    {
+      "method": "clisf_bias_adjusted_B2",
+      "bound": 2.0,
+      "estimated_bias_inflation": 0.8998642172920389,
+      "effective_target": 1.799864217292039,
+      "calibration_effective_sample_size": 841.5777192197227,
+      "infinity_threshold_rate": 1.0
+    },
+    {
+      "method": "clisf_bias_adjusted_B5",
+      "bound": 5.0,
+      "estimated_bias_inflation": 0.7502392172920389,
+      "effective_target": 1.650239217292039,
+      "calibration_effective_sample_size": 837.6295214621031,
+      "infinity_threshold_rate": 1.0
+    },
+    {
+      "method": "clisf_bias_adjusted_B10",
+      "bound": 10.0,
+      "estimated_bias_inflation": 0.5008642172920389,
+      "effective_target": 1.400864217292039,
+      "calibration_effective_sample_size": 836.3144980961845,
+      "infinity_threshold_rate": 1.0
+    },
+    {
+      "method": "clisf_bias_adjusted_B20",
+      "bound": 20.0,
+      "estimated_bias_inflation": 0.00991105352032673,
+      "effective_target": 0.9099110535203268,
+      "calibration_effective_sample_size": 835.6623610221654,
+      "infinity_threshold_rate": 0.0
+    }
+  ],
+  "audit_groups": [
+    {
+      "method": "split_independent",
+      "low_reliability": false,
+      "n": 32457,
+      "set_coverage": 0.9134239147179345,
+      "mean_set_size": 1.3461194811596882
+    },
+    {
+      "method": "split_independent",
+      "low_reliability": true,
+      "n": 32127,
+      "set_coverage": 0.8612693373175211,
+      "mean_set_size": 3.061288013197622
+    },
+    {
+      "method": "weighted_histogram",
+      "low_reliability": false,
+      "n": 32457,
+      "set_coverage": 0.9082786455926303,
+      "mean_set_size": 1.2661983547462796
+    },
+    {
+      "method": "weighted_histogram",
+      "low_reliability": true,
+      "n": 32127,
+      "set_coverage": 0.84586173623432,
+      "mean_set_size": 2.847324680175553
+    },
+    {
+      "method": "clisf_bias_adjusted_B5",
+      "low_reliability": false,
+      "n": 32457,
+      "set_coverage": 1.0,
+      "mean_set_size": 13.0
+    },
+    {
+      "method": "clisf_bias_adjusted_B5",
+      "low_reliability": true,
+      "n": 32127,
+      "set_coverage": 1.0,
+      "mean_set_size": 13.0
+    },
+    {
+      "method": "target_split",
+      "low_reliability": false,
+      "n": 32457,
+      "set_coverage": 0.9183535138799026,
+      "mean_set_size": 1.4418153248913947
+    },
+    {
+      "method": "target_split",
+      "low_reliability": true,
+      "n": 32127,
+      "set_coverage": 0.8779531235409469,
+      "mean_set_size": 3.2895695209636755
+    },
+    {
+      "method": "target_acp_renorm",
+      "low_reliability": false,
+      "n": 32457,
+      "set_coverage": 0.9118217949902948,
+      "mean_set_size": 1.279631512462643
+    },
+    {
+      "method": "target_acp_renorm",
+      "low_reliability": true,
+      "n": 32127,
+      "set_coverage": 0.8851122109129392,
+      "mean_set_size": 3.353254272107573
+    },
+    {
+      "method": "target_audited_groups",
+      "low_reliability": false,
+      "n": 32457,
+      "set_coverage": 0.8950303478448408,
+      "mean_set_size": 1.077826046769572
+    },
+    {
+      "method": "target_audited_groups",
+      "low_reliability": true,
+      "n": 32127,
+      "set_coverage": 0.9001151679272886,
+      "mean_set_size": 3.6549942416036356
+    }
+  ],
+  "target_counts": {
+    "audit": 21529,
+    "calibration": 21529,
+    "evaluation": 64584,
+    "audit_boundary": 0.7991750945858618
+  },
+  "guarantee": "empirical; point dependence, estimated density ratios and possible concept shift prevent claiming deployment guarantees; clipping inflation omits unknown density-error term; target-adaptation comparisons receive 40% target point labels and use the same remaining evaluation records",
+  "input_sha256": {
+    "reports/experiments/independent_calibration_controls/2022_train_2018_test/family_posterior.npz": "3a1c018690a76acc90f6963f9b4998bdf864b8f3af7a5b50f4efbe5ff807123e",
+    "reports/experiments/independent_calibration_controls/2022_train_2018_test/records.parquet": "e5e0a3d0c7e60f328781ef7ae020268b8b32afabf3f67202bdb3bf81a2006f4b"
+  }
+}

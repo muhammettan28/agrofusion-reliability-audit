@@ -1,0 +1,13 @@
+\begin{table}[htbp]
+\centering\footnotesize
+\setlength{\tabcolsep}{2.3pt}
+\caption{Full-feature normal-partition comparison on the same 31,725 fine-target test records. The XGBoost row uses the full-training controlled predictor. The compact compressed FT-Transformer uses one seed and two prespecified learning rates selected by validation negative log-likelihood (NLL). Both use training-only preprocessing. ECE-10 is ten-bin expected calibration error. No exhaustive neural-tuning or shift-wide superiority claim is made. The paired accuracy difference (FT minus XGBoost) is 0.0103 [0.0072, 0.0135]; this 95\% record-bootstrap interval conditions on fixed fitted models and excludes spatial dependence and refitting uncertainty.}\label{tab:supp-full-feature-neural}
+\begin{tabular}{lrrrrr}
+\toprule
+Model & Accuracy & Balanced acc. & Macro F1 & ECE-10 & NLL \\
+\midrule
+Controlled XGBoost & 0.7253 & 0.4042 & 0.4356 & 0.0143 & 0.8598 \\
+FT-Transformer & 0.7357 & 0.4263 & 0.4508 & 0.0171 & 0.8248 \\
+\bottomrule
+\end{tabular}
+\end{table}

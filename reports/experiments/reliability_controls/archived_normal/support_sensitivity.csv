@@ -1,0 +1,11 @@
+minimum_test_support,n_families,quantity,policy,metric,point,lo,hi
+4,12,macro_coverage,direct_msp,macro_coverage,0.6256982606823375,0.6139212313322319,0.6388757663259536
+4,12,macro_coverage,weighted_family,macro_coverage,0.7716217496320729,0.7547221679040781,0.7873081265949313
+4,12,macro_coverage,conditional_best,macro_coverage,0.6792703237498913,0.664274094946143,0.6942558030618179
+4,12,macro_coverage_difference,weighted_family,macro_coverage_difference,0.1459234889497354,0.12645648620084676,0.16530217582361148
+4,12,macro_coverage_difference,conditional_best,macro_coverage_difference,0.0535720630675538,0.03764834903852078,0.06959280090434707
+30,11,macro_coverage,direct_msp,macro_coverage,0.6700407357913901,0.6618260996687488,0.678035185083785
+30,11,macro_coverage,weighted_family,macro_coverage,0.7790732566519164,0.7721346174009031,0.7860476614812095
+30,11,macro_coverage,conditional_best,macro_coverage,0.7159438014575616,0.7090458087284518,0.7231162144952175
+30,11,macro_coverage_difference,weighted_family,macro_coverage_difference,0.10903252086052628,0.09955437621291559,0.11899441476851771
+30,11,macro_coverage_difference,conditional_best,macro_coverage_difference,0.04590306566617153,0.037313845012443836,0.05534172678028472

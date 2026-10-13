@@ -1,0 +1,28 @@
+\begin{table}[htbp]
+\centering\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\caption{Normal controlled refits (seed 42). All thresholded policies use a nominal .80 validation answering budget; conformal consensus uses a .90 prediction-set target. $\bar q$ and $\bar f$ are macro correct emitted-label and correct family coverage. Family-output rate divides family outputs by all test records; $I$ and $D$ measure specificity and accepted normalized tree distance. The percentile (CDF) row supplies the main comparison; the older predicted-class thresholds use within-class quantiles and differ under discrete ties.}\label{tab:supp-controls-normal}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Policy & $c_{\mathrm{agg}}$ & $\bar c$ & $\bar q$ & $\bar f$ & \shortstack{Family-output\\rate} & Tier acc. & $I$ & $D$ \\
+\midrule
+Direct MSP & 0.8068 & 0.6045 & 0.3187 & 0.3187 & 0.8068 & 0.8089 & 0.8068 & 0.1482 \\
+Probability margin & 0.8048 & 0.6154 & 0.3185 & 0.3185 & 0.8048 & 0.8082 & 0.8048 & 0.1479 \\
+Logit margin & 0.8064 & 0.6288 & 0.3197 & 0.3197 & 0.8064 & 0.8043 & 0.8064 & 0.1509 \\
+Major-only (sum) & 0.8066 & 0.6872 & 0.5285 & 0.0000 & 0.0000 & 0.9114 & 0.2689 & 0.2943 \\
+Major-only (separate) & 0.8073 & 0.6896 & 0.5299 & 0.0000 & 0.0000 & 0.9081 & 0.2673 & 0.2960 \\
+Predicted-class thresholds & 0.8054 & 0.6434 & 0.3578 & 0.3578 & 0.8054 & 0.8064 & 0.8054 & 0.1511 \\
+Predicted-class percentile (CDF) & 0.8052 & 0.6431 & 0.3576 & 0.3576 & 0.8052 & 0.8064 & 0.8052 & 0.1511 \\
+Same-predictor tier-max. & 0.8015 & 0.6816 & 0.5118 & 0.1143 & 0.2995 & 0.9044 & 0.4587 & 0.2096 \\
+Same-predictor detail & 0.8015 & 0.6816 & 0.4824 & 0.1925 & 0.5023 & 0.8864 & 0.5935 & 0.1662 \\
+Direct routed tier-max. & 0.8020 & 0.6836 & 0.5112 & 0.1073 & 0.3004 & 0.9002 & 0.4561 & 0.2113 \\
+Direct routed detail & 0.8020 & 0.6836 & 0.4819 & 0.1816 & 0.5002 & 0.8821 & 0.5895 & 0.1694 \\
+Conditional tier-max. & 0.8020 & 0.6836 & 0.5125 & 0.1060 & 0.2997 & 0.9008 & 0.4570 & 0.2116 \\
+Conditional detail & 0.8020 & 0.6836 & 0.4834 & 0.1833 & 0.5024 & 0.8830 & 0.5917 & 0.1682 \\
+Major at backoff mask & 0.8020 & 0.6836 & 0.5260 & 0.0000 & 0.0000 & 0.9094 & 0.2653 & 0.2953 \\
+Climbing & 0.8026 & 0.6825 & 0.4603 & 0.2306 & 0.6028 & 0.8718 & 0.6607 & 0.1515 \\
+Max-Coverage & 0.8026 & 0.6825 & 0.4603 & 0.2306 & 0.6028 & 0.8717 & 0.6607 & 0.1515 \\
+Conformal consensus & 0.5769 & 0.4575 & 0.3310 & 0.1654 & 0.4240 & 0.9224 & 0.4680 & 0.1211 \\
+\bottomrule
+\end{tabular}
+\end{table}

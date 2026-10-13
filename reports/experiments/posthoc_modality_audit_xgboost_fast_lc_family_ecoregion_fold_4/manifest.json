@@ -1,0 +1,22 @@
+{
+  "feature_path": "data/study/features_full_lc_family/pilot_fusion.parquet",
+  "feature_dir": "data/study/features_full_lc_family",
+  "index_path": "data/study/index.parquet",
+  "specialist_dir": "reports/experiments/full_lc_family_xgboost_fast_all",
+  "output_dir": "reports/experiments/posthoc_modality_audit_xgboost_fast_lc_family_ecoregion_fold_4",
+  "model_name": "xgboost_fast",
+  "target_name": "lc_family",
+  "split_column": "ecoregion_fold_4",
+  "train_value": "train",
+  "test_value": "test",
+  "fit_specialists": true,
+  "random_state": 42,
+  "modalities": [
+    "alphaearth",
+    "eo_temporal",
+    "weather",
+    "soil",
+    "topography"
+  ],
+  "n_test": 42325
+}

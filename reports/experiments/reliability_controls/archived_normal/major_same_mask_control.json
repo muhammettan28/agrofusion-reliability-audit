@@ -1,0 +1,19 @@
+{
+  "n_test": 31725,
+  "coverage": 0.8007880220646179,
+  "macro_coverage": 0.6526597860255406,
+  "gap": 0.1481282360390772,
+  "minimum_coverage": 0.27586206896551724,
+  "Z": 0,
+  "n_true_families": 13,
+  "family_rate": 0.0,
+  "major_rate": 0.8007880220646179,
+  "abstain_rate": 0.1992119779353822,
+  "tier_accuracy": 0.9098209013973627,
+  "family_accuracy": null,
+  "hierarchical_information": 0.2649141428883818,
+  "accepted_tree_distance": 0.29508954930131864,
+  "strict_family_correct_over_all": 0.0,
+  "backoff_acceptance_equals_major_threshold_mask": true,
+  "comparison": "Identical accepted records, major outputs only; not matched family specificity"
+}

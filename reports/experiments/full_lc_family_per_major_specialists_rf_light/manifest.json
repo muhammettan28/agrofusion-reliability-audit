@@ -1,0 +1,17 @@
+{
+  "feature_path": "data/study/features_full_lc_family/pilot_fusion.parquet",
+  "major_predictions": "reports/experiments/full_lc_major_sklearn_rf_light_fusion/fusion/random_forest_light/predictions.parquet",
+  "direct_family_predictions": "reports/experiments/full_lc_family_sklearn_rf_light_fusion/fusion/random_forest_light/predictions.parquet",
+  "feature_columns": 568,
+  "models": [
+    "B",
+    "E",
+    "F"
+  ],
+  "coverage_targets": [
+    0.5,
+    0.7,
+    0.8,
+    0.9
+  ]
+}

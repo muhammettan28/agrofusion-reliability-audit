@@ -1,0 +1,29 @@
+\begin{table}[htbp]
+\centering\scriptsize
+\setlength{\tabcolsep}{2.3pt}
+\caption{Labeled-target sensitivity, evaluated on the same remaining 60\% of target points within each fold. Target split CP uses 20\% calibration-point labels; audited methods additionally use 20\% audit-point labels. Source controls use no target labels. Low-reliability groups are fixed by an auditor fitted outside evaluation and calibration; their boundaries use audit-fit records only. Marginal/low-group coverage and mean set size are shown. ACP denotes audited conformal prediction. These adaptation results do not demonstrate zero-label shift robustness.}\label{tab:supp-target-audit}
+\begin{tabular}{llrrr}
+\toprule
+Split & Method & Coverage & Low-group cov. & Set size \\
+\midrule
+Normal & Independent source CP & 0.9043 & 0.8747 & 2.1015 \\
+Normal & Estimated weighted CP & 0.9046 & 0.8753 & 2.1037 \\
+Normal & CLISF + bias, $B=5$ & 0.9046 & 0.8753 & 2.1037 \\
+Normal & Target split CP & 0.9066 & 0.8785 & 2.1337 \\
+Normal & Target ACP reallocation & 0.9061 & 0.8887 & 2.1746 \\
+Normal & Target audited groups & 0.9045 & 0.8977 & 2.1610 \\
+Temporal & Independent source CP & $0.8768\pm0.0150$ & $0.8475\pm0.0195$ & $2.1557\pm0.0617$ \\
+Temporal & Estimated weighted CP & $0.8751\pm0.0030$ & $0.8452\pm0.0009$ & $2.1258\pm0.1034$ \\
+Temporal & CLISF + bias, $B=5$ & $1.0000\pm0.0000$ & $1.0000\pm0.0000$ & $13.0000\pm0.0000$ \\
+Temporal & Target split CP & $0.8998\pm0.0021$ & $0.8822\pm0.0059$ & $2.4964\pm0.1916$ \\
+Temporal & Target ACP reallocation & $0.8995\pm0.0014$ & $0.8884\pm0.0046$ & $2.4192\pm0.1528$ \\
+Temporal & Target audited groups & $0.8992\pm0.0024$ & $0.9003\pm0.0003$ & $2.4921\pm0.1871$ \\
+Ecoregion & Independent source CP & $0.8740\pm0.0168$ & $0.8374\pm0.0295$ & $2.1455\pm0.3505$ \\
+Ecoregion & Estimated weighted CP & $0.8769\pm0.0182$ & $0.8416\pm0.0312$ & $2.1815\pm0.3616$ \\
+Ecoregion & CLISF + bias, $B=5$ & $1.0000\pm0.0000$ & $1.0000\pm0.0000$ & $13.0000\pm0.0000$ \\
+Ecoregion & Target split CP & $0.8999\pm0.0073$ & $0.8764\pm0.0118$ & $2.5089\pm0.2971$ \\
+Ecoregion & Target ACP reallocation & $0.8988\pm0.0067$ & $0.8844\pm0.0112$ & $2.4615\pm0.3039$ \\
+Ecoregion & Target audited groups & $0.9012\pm0.0064$ & $0.8976\pm0.0092$ & $2.5416\pm0.2981$ \\
+\bottomrule
+\end{tabular}
+\end{table}

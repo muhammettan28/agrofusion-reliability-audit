@@ -1,0 +1,13 @@
+{
+  "policy": "best_tier_backoff",
+  "policy_selection_split": "validation",
+  "predictions": "reports/experiments/full_lc_family_per_major_specialists_xgboost_accuracy/predicted_major_predictions.parquet",
+  "selected_policy_file": "reports/experiments/full_lc_family_hierarchical_backoff_policy_xgboost_accuracy/selected_policies.csv",
+  "n_test": 31725,
+  "c_agg_non_abstained": 0.8007880220646179,
+  "c_macro_backoff": 0.6526597860255408,
+  "delta_backoff": 0.1481282360390771,
+  "Z_backoff": 0,
+  "min_class_cov_backoff": 0.27586206896551724,
+  "coverage_definition": "Any non-abstained answer (family OR major), grouped by true family; not family-specific answer coverage."
+}

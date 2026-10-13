@@ -1,0 +1,10 @@
+class_balanced_split,target_label,support
+test,B,18596
+test,E,11874
+test,F,1255
+train,B,86774
+train,E,55414
+train,F,5851
+validation,B,18592
+validation,E,11874
+validation,F,1253

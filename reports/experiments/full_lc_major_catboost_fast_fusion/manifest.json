@@ -1,0 +1,11 @@
+{
+  "feature_dir": "data/study/features_full_lc_major",
+  "feature_sets": [
+    "fusion"
+  ],
+  "models": [
+    "catboost_fast"
+  ],
+  "random_state": 42,
+  "max_train_rows": null
+}

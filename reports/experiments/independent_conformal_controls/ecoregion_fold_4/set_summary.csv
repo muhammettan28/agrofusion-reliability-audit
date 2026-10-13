@@ -1,0 +1,15 @@
+fold,protocol,method,n_test,set_coverage,mean_set_size,singleton_rate,empty_rate,all_label_rate,macro_set_coverage
+ecoregion_fold_4,source_calibration_original_test,split_independent,42325,0.8887418783225044,2.7452569403425873,0.2143177790903721,0.0,0.0,0.6747971915011715
+ecoregion_fold_4,source_calibration_original_test,split_shared_validation,42325,0.899515652687537,2.914613112817484,0.18856467808623745,0.0,0.0,0.690149672358996
+ecoregion_fold_4,source_calibration_original_test,class_conditional_canonical,42325,0.8820318960425281,5.371411695215594,0.0,0.0,0.0,0.9168681978826482
+ecoregion_fold_4,source_calibration_original_test,weighted_histogram,42325,0.8856231541642056,2.7024689899586534,0.22166568222090963,0.0,0.0,0.6705671302447838
+ecoregion_fold_4,source_calibration_original_test,clisf_bias_adjusted_B2,42325,1.0,13.0,0.0,0.0,1.0,1.0
+ecoregion_fold_4,source_calibration_original_test,clisf_bias_adjusted_B5,42325,1.0,13.0,0.0,0.0,1.0,1.0
+ecoregion_fold_4,source_calibration_original_test,clisf_bias_adjusted_B10,42325,1.0,13.0,0.0,0.0,1.0,1.0
+ecoregion_fold_4,source_calibration_original_test,clisf_bias_adjusted_B20,42325,0.8856231541642056,2.7024689899586534,0.22166568222090963,0.0,0.0,0.6705671302447838
+ecoregion_fold_4,labeled_target_adaptation_shared_evaluation,split_independent,25390,0.8879873966128397,2.749507680189051,0.21185506104765656,0.0,0.0,0.7271875252989862
+ecoregion_fold_4,labeled_target_adaptation_shared_evaluation,weighted_histogram,25390,0.8851122489168964,2.7065773926742813,0.2191413942497046,0.0,0.0,0.7225988950390375
+ecoregion_fold_4,labeled_target_adaptation_shared_evaluation,clisf_bias_adjusted_B5,25390,1.0,13.0,0.0,0.0,1.0,1.0
+ecoregion_fold_4,labeled_target_adaptation_shared_evaluation,target_split,25390,0.8956675856636471,2.8721937770775896,0.1936589208349744,0.0,0.0,0.7389331797074644
+ecoregion_fold_4,labeled_target_adaptation_shared_evaluation,target_acp_renorm,25390,0.8948011027963765,2.8422213469870026,0.23339897597479323,0.0,0.0,0.7430876883142474
+ecoregion_fold_4,labeled_target_adaptation_shared_evaluation,target_audited_groups,25390,0.8978731784166994,2.915163450177235,0.2178022843639228,0.0,0.0,0.7433166917403926

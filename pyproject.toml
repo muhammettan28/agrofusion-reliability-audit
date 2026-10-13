@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agrofusion-reliability"
+version = "0.1.0"
+description = "Class-wise selective and hierarchical evaluation for tabular multimodal land-cover classification."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Muhammet Tan", email = "muhammet.tan@sivas.edu.tr" },
+    { name = "Halit Bakır" },
+]
+dependencies = [
+    "numpy>=2.0",
+    "matplotlib>=3.8",
+    "scipy>=1.11",
+    "polars>=1.36",
+    "scikit-learn>=1.6",
+    "xgboost>=2.1",
+    "lightgbm>=4.6",
+    "catboost>=1.2.10",
+    "torch>=2.8",
+    "tqdm>=4.67",
+    "loguru>=0.7",
+]
+
+[project.optional-dependencies]
+neural-controls = ["rtdl-revisiting-models==0.0.2"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14",
+    "pre-commit>=4.3",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/agrofusion_reliability"]
+
+[tool.ruff.lint]
+extend-select = ["I"]

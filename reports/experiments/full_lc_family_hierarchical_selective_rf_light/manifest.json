@@ -1,0 +1,12 @@
+{
+  "major_predictions": "reports/experiments/full_lc_major_sklearn_rf_light_fusion/fusion/random_forest_light/predictions.parquet",
+  "family_predictions": "reports/experiments/full_lc_family_sklearn_rf_light_fusion/fusion/random_forest_light/predictions.parquet",
+  "coverage_targets": [
+    0.5,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "validation_tuned": true,
+  "test_labels_used_only_for_offline_evaluation": true
+}

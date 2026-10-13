@@ -1,0 +1,5 @@
+comparison,delta_auc,ci_low,ci_high
+confidence_plus_specialist_minus_confidence_only,-0.0002982854716431227,-0.0010183189867622206,0.0003969519132509451
+confidence_plus_posthoc_minus_confidence_only,0.009841342241670437,0.006700573727073991,0.013002325269531958
+confidence_plus_specialist_plus_posthoc_minus_confidence_only,0.009596700584428963,0.006850988668038666,0.012758670931560134
+specialist_plus_posthoc_no_confidence_minus_confidence_only,-0.05035325248473854,-0.05995854663594641,-0.04070824470763235

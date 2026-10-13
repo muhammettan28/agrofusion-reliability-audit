@@ -1,0 +1,50 @@
+\begin{table}[htbp]
+\centering\scriptsize
+\setlength{\tabcolsep}{2.8pt}
+\caption{Matched-answering and multi-threshold comparisons. The upper panel retains exactly $\lceil.80N\rceil$ test records per fold using scores and stable, label-independent tie breaking; backoff retains validation-selected family decisions and varies coarse admission. The lower panel integrates flat-family errors across all answering levels: AURC/CA-AURC use right-constant selective risk; AUGRC/CA-AUGRC use trapezoidal generalized risk with score ties entering together. Values are normal point estimates or descriptive means $\pm$ fold SD (two temporal/five ecoregion folds), not confidence intervals. Training folds overlap.}\label{tab:supp-matched-selection}
+\begin{tabular}{llrrr}
+\toprule
+\multicolumn{5}{l}{\textit{Matched .80 answering: correctness and class-wise coverage}} \\
+Split & Selector & $\bar c$ & $\bar q$ & $\bar f$ \\
+\midrule
+Normal & MSP & 0.5942 & 0.3162 & 0.3162 \\
+Normal & Probability margin & 0.6089 & 0.3164 & 0.3164 \\
+Normal & Logit margin & 0.6208 & 0.3166 & 0.3166 \\
+Normal & Predicted-class percentile & 0.6374 & 0.3564 & 0.3564 \\
+Normal & Same-predictor backoff & 0.6799 & 0.5106 & 0.1143 \\
+Normal & Conditional backoff & 0.6810 & 0.5110 & 0.1060 \\
+Temporal & MSP & $0.6038\pm0.0082$ & $0.2821\pm0.0005$ & $0.2821\pm0.0005$ \\
+Temporal & Probability margin & $0.6174\pm0.0052$ & $0.2838\pm0.0013$ & $0.2838\pm0.0013$ \\
+Temporal & Logit margin & $0.6404\pm0.0155$ & $0.2848\pm0.0016$ & $0.2848\pm0.0016$ \\
+Temporal & Predicted-class percentile & $0.6661\pm0.0065$ & $0.3172\pm0.0002$ & $0.3172\pm0.0002$ \\
+Temporal & Same-predictor backoff & $0.6611\pm0.0020$ & $0.5006\pm0.0044$ & $0.0768\pm0.0049$ \\
+Temporal & Conditional backoff & $0.6719\pm0.0088$ & $0.5035\pm0.0012$ & $0.0759\pm0.0086$ \\
+Ecoregion & MSP & $0.6254\pm0.0531$ & $0.2725\pm0.0220$ & $0.2725\pm0.0220$ \\
+Ecoregion & Probability margin & $0.6420\pm0.0536$ & $0.2740\pm0.0208$ & $0.2740\pm0.0208$ \\
+Ecoregion & Logit margin & $0.6547\pm0.0360$ & $0.2747\pm0.0201$ & $0.2747\pm0.0201$ \\
+Ecoregion & Predicted-class percentile & $0.6751\pm0.0276$ & $0.3104\pm0.0159$ & $0.3104\pm0.0159$ \\
+Ecoregion & Same-predictor backoff & $0.6793\pm0.0402$ & $0.4929\pm0.0483$ & $0.1006\pm0.0345$ \\
+Ecoregion & Conditional backoff & $0.6815\pm0.0445$ & $0.4947\pm0.0502$ & $0.0924\pm0.0277$ \\
+\bottomrule
+\end{tabular}
+\par\medskip
+\begin{tabular}{llrrrr}
+\toprule
+\multicolumn{6}{l}{\textit{Multi-threshold flat-family error areas}} \\
+Split & Selector & AURC & CA-AURC & AUGRC & CA-AUGRC \\
+\midrule
+Normal & MSP & 0.1102 & 0.5571 & 0.0765 & 0.2812 \\
+Normal & Probability margin & 0.1110 & 0.5604 & 0.0772 & 0.2832 \\
+Normal & Logit margin & 0.1144 & 0.5629 & 0.0787 & 0.2842 \\
+Normal & Predicted-class percentile & 0.1229 & 0.4608 & 0.0811 & 0.2572 \\
+Temporal & MSP & $0.1401\pm0.0094$ & $0.6103\pm0.0024$ & $0.0901\pm0.0055$ & $0.3063\pm0.0011$ \\
+Temporal & Probability margin & $0.1422\pm0.0111$ & $0.6134\pm0.0028$ & $0.0911\pm0.0060$ & $0.3079\pm0.0013$ \\
+Temporal & Logit margin & $0.1472\pm0.0135$ & $0.6170\pm0.0031$ & $0.0931\pm0.0066$ & $0.3091\pm0.0016$ \\
+Temporal & Predicted-class percentile & $0.1541\pm0.0088$ & $0.5316\pm0.0073$ & $0.0958\pm0.0058$ & $0.2862\pm0.0003$ \\
+Ecoregion & MSP & $0.1419\pm0.0288$ & $0.6121\pm0.0138$ & $0.0921\pm0.0170$ & $0.3097\pm0.0076$ \\
+Ecoregion & Probability margin & $0.1439\pm0.0274$ & $0.6157\pm0.0145$ & $0.0933\pm0.0164$ & $0.3115\pm0.0079$ \\
+Ecoregion & Logit margin & $0.1493\pm0.0260$ & $0.6200\pm0.0158$ & $0.0955\pm0.0159$ & $0.3130\pm0.0083$ \\
+Ecoregion & Predicted-class percentile & $0.1657\pm0.0452$ & $0.5367\pm0.0204$ & $0.1003\pm0.0211$ & $0.2897\pm0.0086$ \\
+\bottomrule
+\end{tabular}
+\end{table}

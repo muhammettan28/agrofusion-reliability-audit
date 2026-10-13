@@ -1,0 +1,14 @@
+{
+  "score_column": "confidence",
+  "validation_aurc": 0.05656951577445005,
+  "test_aurc": 0.08408613740982071,
+  "coverage_targets": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.85,
+    0.9,
+    0.95
+  ]
+}

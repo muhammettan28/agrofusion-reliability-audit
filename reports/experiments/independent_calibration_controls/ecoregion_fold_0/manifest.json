@@ -1,0 +1,32 @@
+{
+  "fold": "ecoregion_fold_0",
+  "seed": 20261002,
+  "calibration_fraction_of_original_training_points": 0.2,
+  "parameters": {
+    "n_estimators": 220,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "min_child_weight": 3.0,
+    "subsample": 0.85,
+    "colsample_bytree": 0.85,
+    "reg_lambda": 1.0,
+    "max_bin": 256,
+    "tree_method": "hist",
+    "device": "cpu",
+    "n_jobs": 2,
+    "random_state": 42,
+    "eval_metric": "mlogloss"
+  },
+  "input_feature_sha256": "341273d0e929b042f9a322c8cfdce30af02493ac9e1d1176edc20ae55ec6e7ed",
+  "input_index_sha256": "900128fdb595c27fa3fc5ee3c534af7faeda1c9e14d9fa8a48c1cf61ba28b785",
+  "counts": {
+    "train": 101591,
+    "calibration": 25297,
+    "validation": 42321,
+    "test": 42274
+  },
+  "protocol": "point-grouped reservation within original training; validation records sharing calibration point IDs are excluded; remaining original validation tunes policies/auditor, calibration labels never used for fitting/tuning, original test unchanged",
+  "preprocessing": "training-only median imputation and zero-variance removal",
+  "posterior_sha256": "caaac4c0b26c99de9f2ba1b98ad8252192b308f63a773fedd589239c93185da1",
+  "records_sha256": "c3a7b35044f7d8a1e7b3490240ec83f7b527e532c3f1bd6a7bdf7c1906010f8a"
+}

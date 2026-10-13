@@ -1,0 +1,226 @@
+{
+  "fold": "normal",
+  "alpha": 0.1,
+  "base_distribution": "fine probabilities renormalized over fixed 13-family taxonomy",
+  "calibration_class_support": {
+    "B1": 9969,
+    "B2": 777,
+    "B3": 2083,
+    "B4": 584,
+    "B5": 2205,
+    "B7": 761,
+    "B8": 822,
+    "Bx": 30,
+    "E1": 719,
+    "E2": 8970,
+    "E3": 1406,
+    "F2": 4,
+    "F4": 1237
+  },
+  "canonical_class_thresholds": {
+    "B1": 0.6014138460159302,
+    "B2": 0.9814589023590088,
+    "B3": 0.9338389039039612,
+    "B4": 0.9862882494926453,
+    "B5": 0.9573521614074707,
+    "B7": 0.9765504002571106,
+    "B8": 0.9597750306129456,
+    "Bx": 0.9998666644096375,
+    "E1": 0.9817091822624207,
+    "E2": 0.6395199298858643,
+    "E3": 0.975468635559082,
+    "F2": "+inf",
+    "F4": 0.9775741100311279
+  },
+  "density": {
+    "domain_training_source": 8000,
+    "domain_training_target": 8000,
+    "ratio_source": 8000,
+    "ratio_target": 8000,
+    "bias_source": 8000,
+    "bin_count": 20,
+    "bin_edges": [
+      0.36162237375974654,
+      0.3913709193468094,
+      0.40920814871788025,
+      0.42360897064208985,
+      0.437616266310215,
+      0.4492483198642731,
+      0.459210193157196,
+      0.46885449290275577,
+      0.47929763048887253,
+      0.48873989284038544,
+      0.4980688959360123,
+      0.507479989528656,
+      0.5173458069562912,
+      0.5282763838768005,
+      0.5397929251194,
+      0.5523883223533631,
+      0.5669469147920608,
+      0.5850550830364227,
+      0.612144461274147
+    ],
+    "bin_ratios": [
+      0.9841772151898734,
+      0.9795918367346939,
+      1.079734219269103,
+      1.0309597523219816,
+      0.953125,
+      0.9228791773778919,
+      0.9906542056074766,
+      0.9279538904899136,
+      1.051282051282051,
+      0.9826302729528535,
+      1.201754385964912,
+      1.0597402597402596,
+      0.9622641509433962,
+      0.9810874704491725,
+      0.9859484777517564,
+      1.0141176470588236,
+      0.8957446808510638,
+      1.056768558951965,
+      1.090909090909091,
+      0.9255813953488371
+    ],
+    "target_labels_used": false
+  },
+  "clipping": [
+    {
+      "method": "weighted_histogram",
+      "bound": null,
+      "estimated_bias_inflation": 0.0,
+      "effective_target": 0.9,
+      "calibration_effective_sample_size": 29418.254103441683,
+      "infinity_threshold_rate": 0.0
+    },
+    {
+      "method": "clisf_bias_adjusted_B2",
+      "bound": 2.0,
+      "estimated_bias_inflation": 0.0,
+      "effective_target": 0.9,
+      "calibration_effective_sample_size": 29418.254103441683,
+      "infinity_threshold_rate": 0.0
+    },
+    {
+      "method": "clisf_bias_adjusted_B5",
+      "bound": 5.0,
+      "estimated_bias_inflation": 0.0,
+      "effective_target": 0.9,
+      "calibration_effective_sample_size": 29418.254103441683,
+      "infinity_threshold_rate": 0.0
+    },
+    {
+      "method": "clisf_bias_adjusted_B10",
+      "bound": 10.0,
+      "estimated_bias_inflation": 0.0,
+      "effective_target": 0.9,
+      "calibration_effective_sample_size": 29418.254103441683,
+      "infinity_threshold_rate": 0.0
+    },
+    {
+      "method": "clisf_bias_adjusted_B20",
+      "bound": 20.0,
+      "estimated_bias_inflation": 0.0,
+      "effective_target": 0.9,
+      "calibration_effective_sample_size": 29418.254103441683,
+      "infinity_threshold_rate": 0.0
+    }
+  ],
+  "audit_groups": [
+    {
+      "method": "split_independent",
+      "low_reliability": false,
+      "n": 9570,
+      "set_coverage": 0.9334378265412748,
+      "mean_set_size": 1.2633228840125392
+    },
+    {
+      "method": "split_independent",
+      "low_reliability": true,
+      "n": 9423,
+      "set_coverage": 0.8746683646397113,
+      "mean_set_size": 2.9527751246948957
+    },
+    {
+      "method": "weighted_histogram",
+      "low_reliability": false,
+      "n": 9570,
+      "set_coverage": 0.9334378265412748,
+      "mean_set_size": 1.2648902821316614
+    },
+    {
+      "method": "weighted_histogram",
+      "low_reliability": true,
+      "n": 9423,
+      "set_coverage": 0.8753051045314656,
+      "mean_set_size": 2.9556404542077894
+    },
+    {
+      "method": "clisf_bias_adjusted_B5",
+      "low_reliability": false,
+      "n": 9570,
+      "set_coverage": 0.9334378265412748,
+      "mean_set_size": 1.2648902821316614
+    },
+    {
+      "method": "clisf_bias_adjusted_B5",
+      "low_reliability": true,
+      "n": 9423,
+      "set_coverage": 0.8753051045314656,
+      "mean_set_size": 2.9556404542077894
+    },
+    {
+      "method": "target_split",
+      "low_reliability": false,
+      "n": 9570,
+      "set_coverage": 0.9342737722048067,
+      "mean_set_size": 1.2804597701149425
+    },
+    {
+      "method": "target_split",
+      "low_reliability": true,
+      "n": 9423,
+      "set_coverage": 0.8784888039902367,
+      "mean_set_size": 3.000318369945877
+    },
+    {
+      "method": "target_acp_renorm",
+      "low_reliability": false,
+      "n": 9570,
+      "set_coverage": 0.9233019853709509,
+      "mean_set_size": 1.1885057471264369
+    },
+    {
+      "method": "target_acp_renorm",
+      "low_reliability": true,
+      "n": 9423,
+      "set_coverage": 0.8886766422583041,
+      "mean_set_size": 3.1760585800700416
+    },
+    {
+      "method": "target_audited_groups",
+      "low_reliability": false,
+      "n": 9570,
+      "set_coverage": 0.9111807732497388,
+      "mean_set_size": 1.0433646812957158
+    },
+    {
+      "method": "target_audited_groups",
+      "low_reliability": true,
+      "n": 9423,
+      "set_coverage": 0.8976971240581556,
+      "mean_set_size": 3.2960840496657116
+    }
+  ],
+  "target_counts": {
+    "audit": 6371,
+    "calibration": 6361,
+    "evaluation": 18993,
+    "audit_boundary": 0.7981007954145576
+  },
+  "guarantee": "empirical; point dependence, estimated density ratios and possible concept shift prevent claiming deployment guarantees; clipping inflation omits unknown density-error term; target-adaptation comparisons receive 40% target point labels and use the same remaining evaluation records",
+  "input_sha256": {
+    "reports/experiments/independent_calibration_controls/normal/family_posterior.npz": "c436822c1dacf56148b925c9bf4f2afbe5d6adcd32f864300a4add0284c42b4a",
+    "reports/experiments/independent_calibration_controls/normal/records.parquet": "40b6b521b8121dfeb57e5c818eb0275fcf7fe1f936ec7d656ddd5e0c8e81abeb"
+  }
+}

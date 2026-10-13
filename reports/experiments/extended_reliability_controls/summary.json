@@ -1,0 +1,28 @@
+{
+  "folds": {
+    "Normal": [
+      "normal"
+    ],
+    "Temporal": [
+      "2018_train_2022_test",
+      "2022_train_2018_test"
+    ],
+    "Ecoregion": [
+      "ecoregion_fold_0",
+      "ecoregion_fold_1",
+      "ecoregion_fold_2",
+      "ecoregion_fold_3",
+      "ecoregion_fold_4"
+    ]
+  },
+  "targets": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    0.95
+  ],
+  "statistics": "fold means and sample SDs, no population CIs",
+  "test_used_for_cost_or_model_selection": false
+}

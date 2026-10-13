@@ -1,0 +1,24 @@
+\begin{table}[pos=htbp]
+\centering\footnotesize
+\setlength{\tabcolsep}{3.2pt}
+\caption{Seed-42 normal-test answering, correctness and specificity at a nominal 0.80 validation answering target. $\bar c$, $\bar q$ and $\bar f$ average answered, correct emitted-level and correct family coverage over true families. For flat family policies, $\bar q=\bar f$. $I$ averages output specificity over all records; tier accuracy is pooled over accepted outputs. Controlled refits and original fits are separate panels. Percentile selection uses a validation CDF; no test-ranked threshold is used here. Class weighting changes the predictor and is included only in the original panel; Climbing is included only in the controlled panel.}
+\label{tab:policy_master}
+\begin{tabular}{lrrrrrr}
+\toprule
+Policy & $c_{\mathrm{agg}}$ & $\bar c$ & $\bar q$ & $\bar f$ & $I$ & Tier acc. \\
+\midrule
+\multicolumn{7}{l}{\textit{Controlled normal refits}} \\
+Direct MSP & 0.8068 & 0.6045 & 0.3187 & 0.3187 & 0.8068 & 0.8089 \\
+Predicted-class percentile & 0.8052 & 0.6431 & 0.3576 & 0.3576 & 0.8052 & 0.8064 \\
+Major-only (sum) & 0.8066 & 0.6872 & 0.5285 & 0.0000 & 0.2689 & 0.9114 \\
+Same-predictor backoff & 0.8015 & 0.6816 & 0.5118 & 0.1143 & 0.4587 & 0.9044 \\
+Conditional backoff & 0.8020 & 0.6836 & 0.5125 & 0.1060 & 0.4570 & 0.9008 \\
+Climbing & 0.8026 & 0.6825 & 0.4603 & 0.2306 & 0.6607 & 0.8718 \\
+\midrule
+\multicolumn{7}{l}{\textit{Original normal fits}} \\
+Direct MSP & 0.8043 & 0.5776 & 0.3183 & 0.3183 & 0.8043 & 0.8104 \\
+Class-weighted family & 0.8017 & 0.7635 & 0.4456 & 0.4456 & 0.8017 & 0.7168 \\
+Conditional backoff & 0.8008 & 0.6527 & 0.5072 & 0.1070 & 0.4580 & 0.9008 \\
+\bottomrule
+\end{tabular}
+\end{table}

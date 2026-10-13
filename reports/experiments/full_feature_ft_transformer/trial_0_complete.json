@@ -1,0 +1,6 @@
+{
+  "epochs_completed": 12,
+  "stopping_reason": "validation_patience",
+  "best_epoch": 7,
+  "validation_nll": 0.8170248866081238
+}

@@ -1,0 +1,13 @@
+{
+  "validation_n": 42271,
+  "test_n": 42289,
+  "excluded_coarsely_annotated_validation_test_records": 3,
+  "n_bootstrap": 1000,
+  "seed": 42,
+  "CI_method": "paired class-stratified percentile record bootstrap; fixed models/thresholds/class supports",
+  "class_CI_method": "Wilson score intervals; prevents zero-width intervals for sparse zero-coverage classes",
+  "interval_limitations": "not simultaneous; no spatial dependence, refitting or threshold-selection uncertainty",
+  "hierarchy": "root-major-family; 13 family leaves; B/E coarse training probability mass assigned to parent",
+  "climbing": "adapted Goren inference rule with validation temperature scaling; coverage-budget threshold selection, not target-accuracy algorithm",
+  "margin": "log probability ratio equals raw softmax logit gap; geometric margin not applicable to tree ensemble"
+}

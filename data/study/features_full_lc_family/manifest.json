@@ -1,0 +1,115 @@
+{
+  "input_dir": "data/study/features_full",
+  "mode": "lc_family",
+  "feature_sets": {
+    "alphaearth": {
+      "rows": 211483,
+      "labels": 15,
+      "feature_columns": 128
+    },
+    "eo_temporal": {
+      "rows": 211483,
+      "labels": 15,
+      "feature_columns": 243
+    },
+    "weather": {
+      "rows": 211483,
+      "labels": 15,
+      "feature_columns": 162
+    },
+    "soil": {
+      "rows": 211483,
+      "labels": 15,
+      "feature_columns": 32
+    },
+    "topography": {
+      "rows": 211483,
+      "labels": 15,
+      "feature_columns": 3
+    },
+    "fusion": {
+      "rows": 211483,
+      "labels": 15,
+      "feature_columns": 568
+    }
+  },
+  "labels": 15,
+  "rows": 211483,
+  "label_support_global": [
+    {
+      "target_label": "B1",
+      "support": 71433,
+      "share": 0.33777183035988706
+    },
+    {
+      "target_label": "E2",
+      "support": 63607,
+      "share": 0.3007664918693228
+    },
+    {
+      "target_label": "B5",
+      "support": 15911,
+      "share": 0.07523536170756041
+    },
+    {
+      "target_label": "B3",
+      "support": 15058,
+      "share": 0.07120194058151245
+    },
+    {
+      "target_label": "E3",
+      "support": 10466,
+      "share": 0.049488611377746676
+    },
+    {
+      "target_label": "F4",
+      "support": 8344,
+      "share": 0.03945470794342808
+    },
+    {
+      "target_label": "B8",
+      "support": 6099,
+      "share": 0.028839197476865752
+    },
+    {
+      "target_label": "B7",
+      "support": 5642,
+      "share": 0.02667826728389516
+    },
+    {
+      "target_label": "B2",
+      "support": 5537,
+      "share": 0.02618177347588222
+    },
+    {
+      "target_label": "E1",
+      "support": 5088,
+      "share": 0.024058671382569757
+    },
+    {
+      "target_label": "B4",
+      "support": 4090,
+      "share": 0.01933961595021822
+    },
+    {
+      "target_label": "Bx",
+      "support": 190,
+      "share": 0.000898417366880553
+    },
+    {
+      "target_label": "F2",
+      "support": 15,
+      "share": 7.092768685899102e-05
+    },
+    {
+      "target_label": "B",
+      "support": 2,
+      "share": 9.457024914532137e-06
+    },
+    {
+      "target_label": "E",
+      "support": 1,
+      "share": 4.728512457266069e-06
+    }
+  ]
+}

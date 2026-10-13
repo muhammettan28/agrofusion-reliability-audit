@@ -1,0 +1,2 @@
+comparison,accuracy_difference,ci_low,ci_high,n_test,bootstrap_repetitions,seed,interpretation
+FT-Transformer minus controlled XGBoost,0.010338849487785658,0.007249802994483846,0.013522458628841608,31725,2000,20261004,"paired record-bootstrap interval; fixed fits, excludes spatial dependence and training variation"

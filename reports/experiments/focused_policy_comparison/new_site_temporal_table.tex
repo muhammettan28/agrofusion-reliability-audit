@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\caption{New-site temporal sensitivity for fixed seed-42 policies. All point IDs observed in the source year, including validation-only points, are excluded from the target test set. Original fold-validation thresholds and recorded per-example actions are unchanged. $N$ and $K$ count retained records and observed true families; macro measures use the same retained families within each direction. In 2018$\to$2022, F2 has two retained records and neither policy answers either record. These subsets exclude site revisits, not broader spatial dependence.}\label{tab:supp-new-site-temporal}
+\begin{tabular}{llrrrrrrr}
+\toprule
+Direction & Policy & $N$ & $K$ & $c_{\mathrm{agg}}$ & $\bar c$ & $\bar q$ & $\bar f$ & $Z$ \\
+\midrule
+2018$\to$2022 & Direct MSP & 60,390 & 13 & 0.7819 & 0.5503 & 0.2626 & 0.2626 & 1 \\
+2018$\to$2022 & Same-predictor & 60,390 & 13 & 0.7858 & 0.6227 & 0.4727 & 0.0844 & 1 \\
+2022$\to$2018 & Direct MSP & 64,193 & 13 & 0.7902 & 0.5724 & 0.2663 & 0.2663 & 0 \\
+2022$\to$2018 & Same-predictor & 64,193 & 13 & 0.8176 & 0.6536 & 0.5011 & 0.0777 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}

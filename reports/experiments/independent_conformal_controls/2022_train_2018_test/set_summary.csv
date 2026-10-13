@@ -1,0 +1,15 @@
+fold,protocol,method,n_test,set_coverage,mean_set_size,singleton_rate,empty_rate,all_label_rate,macro_set_coverage
+2022_train_2018_test,source_calibration_original_test,split_independent,107642,0.8881756191821036,2.203043421712714,0.3558741011872689,0.0,0.0,0.6287214699423299
+2022_train_2018_test,source_calibration_original_test,split_shared_validation,107642,0.8927927760539567,2.269272217164304,0.3384459597554858,0.0,0.0,0.6362844019298509
+2022_train_2018_test,source_calibration_original_test,class_conditional_canonical,107642,0.8963694468701808,4.922827520856171,0.0,0.0,0.0,0.9099080086560263
+2022_train_2018_test,source_calibration_original_test,weighted_histogram,107642,0.8778636591664963,2.057105962356701,0.39717768157410677,0.0,0.0,0.6105642260728044
+2022_train_2018_test,source_calibration_original_test,clisf_bias_adjusted_B2,107642,1.0,13.0,0.0,0.0,1.0,1.0
+2022_train_2018_test,source_calibration_original_test,clisf_bias_adjusted_B5,107642,1.0,13.0,0.0,0.0,1.0,1.0
+2022_train_2018_test,source_calibration_original_test,clisf_bias_adjusted_B10,107642,1.0,13.0,0.0,0.0,1.0,1.0
+2022_train_2018_test,source_calibration_original_test,clisf_bias_adjusted_B20,107642,0.8847940395013099,2.1541684472603633,0.3692889392616265,0.0,0.0,0.6222717373087531
+2022_train_2018_test,labeled_target_adaptation_shared_evaluation,split_independent,64584,0.8874798711755234,2.199321813452248,0.35610987241422026,0.0,0.0,0.6304801182931529
+2022_train_2018_test,labeled_target_adaptation_shared_evaluation,weighted_histogram,64584,0.8772296544035675,2.0527220364176886,0.39785395763656634,0.0,0.0,0.612756493482826
+2022_train_2018_test,labeled_target_adaptation_shared_evaluation,clisf_bias_adjusted_B5,64584,1.0,13.0,0.0,0.0,1.0,1.0
+2022_train_2018_test,labeled_target_adaptation_shared_evaluation,target_split,64584,0.8982565341260993,2.360971757710888,0.3147993311036789,0.0,0.0,0.6492393674533764
+2022_train_2018_test,labeled_target_adaptation_shared_evaluation,target_acp_renorm,64584,0.8985352409265452,2.3111451752756103,0.37111358850489284,0.0,0.0,0.6536607092594817
+2022_train_2018_test,labeled_target_adaptation_shared_evaluation,target_audited_groups,64584,0.8975597671249845,2.359825963086833,0.4662300260126347,0.0,0.0,0.6546003094939816

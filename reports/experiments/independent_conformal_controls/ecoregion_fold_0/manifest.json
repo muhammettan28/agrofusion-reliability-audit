@@ -1,0 +1,226 @@
+{
+  "fold": "ecoregion_fold_0",
+  "alpha": 0.1,
+  "base_distribution": "fine probabilities renormalized over fixed 13-family taxonomy",
+  "calibration_class_support": {
+    "B1": 8663,
+    "B2": 446,
+    "B3": 1833,
+    "B4": 545,
+    "B5": 1977,
+    "B7": 743,
+    "B8": 916,
+    "Bx": 23,
+    "E1": 673,
+    "E2": 6784,
+    "E3": 1538,
+    "F2": 3,
+    "F4": 1153
+  },
+  "canonical_class_thresholds": {
+    "B1": 0.5968338251113892,
+    "B2": 0.9917408227920532,
+    "B3": 0.9370017647743225,
+    "B4": 0.985429048538208,
+    "B5": 0.9563280940055847,
+    "B7": 0.975354790687561,
+    "B8": 0.9341685175895691,
+    "Bx": 0.9998032450675964,
+    "E1": 0.9821739196777344,
+    "E2": 0.7145414352416992,
+    "E3": 0.9636586904525757,
+    "F2": "+inf",
+    "F4": 0.9712501168251038
+  },
+  "density": {
+    "domain_training_source": 8000,
+    "domain_training_target": 8000,
+    "ratio_source": 8000,
+    "ratio_target": 8000,
+    "bias_source": 8000,
+    "bin_count": 20,
+    "bin_edges": [
+      2.035713730919043e-08,
+      6.290315184287466e-07,
+      5.620859019472859e-06,
+      2.373884963162712e-05,
+      7.177513725764584e-05,
+      0.00016202158440137282,
+      0.00030853869975544523,
+      0.0005632204934954651,
+      0.0009434583043912426,
+      0.0015203581424430013,
+      0.0024742545327171746,
+      0.00405483348295093,
+      0.006608647131361069,
+      0.011072323564440012,
+      0.019026370719075203,
+      0.03337063863873493,
+      0.06482307799160483,
+      0.15896999090909975,
+      0.3954812213778496
+    ],
+    "bin_ratios": [
+      0.002638522427440633,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.005405405405405406,
+      0.0022522522522522522,
+      0.002570694087403599,
+      0.007594936708860759,
+      0.0024330900243309003,
+      0.00959232613908873,
+      0.016260162601626018,
+      0.002331002331002331,
+      0.015113350125944584,
+      0.03125,
+      0.03814713896457766,
+      0.15587529976019185,
+      0.4329608938547486,
+      16.691144708423323
+    ],
+    "target_labels_used": false
+  },
+  "clipping": [
+    {
+      "method": "weighted_histogram",
+      "bound": null,
+      "estimated_bias_inflation": 0.0,
+      "effective_target": 0.9,
+      "calibration_effective_sample_size": 1581.6419770330644,
+      "infinity_threshold_rate": 0.0
+    },
+    {
+      "method": "clisf_bias_adjusted_B2",
+      "bound": 2.0,
+      "estimated_bias_inflation": 0.8462004105074408,
+      "effective_target": 1.746200410507441,
+      "calibration_effective_sample_size": 2369.8821922742754,
+      "infinity_threshold_rate": 1.0
+    },
+    {
+      "method": "clisf_bias_adjusted_B5",
+      "bound": 5.0,
+      "estimated_bias_inflation": 0.6673254105074407,
+      "effective_target": 1.5673254105074408,
+      "calibration_effective_sample_size": 1831.3661689911773,
+      "infinity_threshold_rate": 1.0
+    },
+    {
+      "method": "clisf_bias_adjusted_B10",
+      "bound": 10.0,
+      "estimated_bias_inflation": 0.3692004105074408,
+      "effective_target": 1.2692004105074408,
+      "calibration_effective_sample_size": 1652.5034604305501,
+      "infinity_threshold_rate": 1.0
+    },
+    {
+      "method": "clisf_bias_adjusted_B20",
+      "bound": 20.0,
+      "estimated_bias_inflation": 0.0,
+      "effective_target": 0.9,
+      "calibration_effective_sample_size": 1581.6419770330644,
+      "infinity_threshold_rate": 0.0
+    }
+  ],
+  "audit_groups": [
+    {
+      "method": "split_independent",
+      "low_reliability": false,
+      "n": 12715,
+      "set_coverage": 0.9286669288242233,
+      "mean_set_size": 1.3362957137239482
+    },
+    {
+      "method": "split_independent",
+      "low_reliability": true,
+      "n": 12708,
+      "set_coverage": 0.8469468051621026,
+      "mean_set_size": 2.4765502045955303
+    },
+    {
+      "method": "weighted_histogram",
+      "low_reliability": false,
+      "n": 12715,
+      "set_coverage": 0.9280377506881636,
+      "mean_set_size": 1.3076681085332285
+    },
+    {
+      "method": "weighted_histogram",
+      "low_reliability": true,
+      "n": 12708,
+      "set_coverage": 0.840336795719232,
+      "mean_set_size": 2.3840100723953417
+    },
+    {
+      "method": "clisf_bias_adjusted_B5",
+      "low_reliability": false,
+      "n": 12715,
+      "set_coverage": 1.0,
+      "mean_set_size": 13.0
+    },
+    {
+      "method": "clisf_bias_adjusted_B5",
+      "low_reliability": true,
+      "n": 12708,
+      "set_coverage": 1.0,
+      "mean_set_size": 13.0
+    },
+    {
+      "method": "target_split",
+      "low_reliability": false,
+      "n": 12715,
+      "set_coverage": 0.9329925285096343,
+      "mean_set_size": 1.4259535981124656
+    },
+    {
+      "method": "target_split",
+      "low_reliability": true,
+      "n": 12708,
+      "set_coverage": 0.8677998111425873,
+      "mean_set_size": 2.7367799811142586
+    },
+    {
+      "method": "target_acp_renorm",
+      "low_reliability": false,
+      "n": 12715,
+      "set_coverage": 0.9268580416830515,
+      "mean_set_size": 1.2503342508847817
+    },
+    {
+      "method": "target_acp_renorm",
+      "low_reliability": true,
+      "n": 12708,
+      "set_coverage": 0.8748819641170916,
+      "mean_set_size": 2.8090966320428077
+    },
+    {
+      "method": "target_audited_groups",
+      "low_reliability": false,
+      "n": 12715,
+      "set_coverage": 0.9088478175383405,
+      "mean_set_size": 1.0390876917027134
+    },
+    {
+      "method": "target_audited_groups",
+      "low_reliability": true,
+      "n": 12708,
+      "set_coverage": 0.8945546112684923,
+      "mean_set_size": 3.182247403210576
+    }
+  ],
+  "target_counts": {
+    "audit": 8411,
+    "calibration": 8440,
+    "evaluation": 25423,
+    "audit_boundary": 0.8064624722832093
+  },
+  "guarantee": "empirical; point dependence, estimated density ratios and possible concept shift prevent claiming deployment guarantees; clipping inflation omits unknown density-error term; target-adaptation comparisons receive 40% target point labels and use the same remaining evaluation records",
+  "input_sha256": {
+    "reports/experiments/independent_calibration_controls/ecoregion_fold_0/family_posterior.npz": "caaac4c0b26c99de9f2ba1b98ad8252192b308f63a773fedd589239c93185da1",
+    "reports/experiments/independent_calibration_controls/ecoregion_fold_0/records.parquet": "c3a7b35044f7d8a1e7b3490240ec83f7b527e532c3f1bd6a7bdf7c1906010f8a"
+  }
+}

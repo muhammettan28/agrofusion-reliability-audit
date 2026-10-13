@@ -1,0 +1,19 @@
+{
+  "targets": [
+    "lc_family"
+  ],
+  "shift_types": [
+    "temporal",
+    "ecoregion"
+  ],
+  "alphas": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "random_state": 42,
+  "index": "data/study/index.parquet",
+  "feature_paths": {
+    "lc_family": "data/study/features_full_lc_family/pilot_fusion.parquet"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "score_path": "reports/experiments/posthoc_modality_audit_xgboost_fast_lc_family_ecoregion_fold_4/posthoc_modality_scores.parquet",
+  "n_bootstrap": 1000,
+  "seed": 42,
+  "split_fraction": 0.7,
+  "scenario_label": "ecoregion fold 4 `lc_family`, XGBoost-fast",
+  "holdout_n": 12698
+}

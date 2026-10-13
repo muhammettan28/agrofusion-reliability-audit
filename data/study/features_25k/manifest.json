@@ -1,0 +1,26 @@
+{
+  "alphaearth": {
+    "rows": 25000,
+    "feature_columns": 128
+  },
+  "topography": {
+    "rows": 25000,
+    "feature_columns": 3
+  },
+  "soil": {
+    "rows": 25000,
+    "feature_columns": 32
+  },
+  "weather": {
+    "rows": 25000,
+    "feature_columns": 162
+  },
+  "eo_temporal": {
+    "rows": 25000,
+    "feature_columns": 243
+  },
+  "fusion": {
+    "rows": 25000,
+    "feature_columns": 568
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "2018_train_2022_test": {
+    "confidence": {
+      "validation_aurc": 0.06729611866219767,
+      "test_aurc": 0.08265680964650086
+    },
+    "min_conf_agreement": {
+      "validation_aurc": 0.06872781228690197,
+      "test_aurc": 0.0864864077999927
+    }
+  },
+  "2022_train_2018_test": {
+    "confidence": {
+      "validation_aurc": 0.07723695663519878,
+      "test_aurc": 0.07523188529547946
+    },
+    "min_conf_agreement": {
+      "validation_aurc": 0.07862354393010973,
+      "test_aurc": 0.07851879555638837
+    }
+  }
+}

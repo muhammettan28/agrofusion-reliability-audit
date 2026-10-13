@@ -1,0 +1,22 @@
+{
+  "lc_major_fusion_rf_light": {
+    "validation_n": 31719,
+    "validation_accuracy": 0.836880103408052,
+    "validation_mean_confidence": 0.7783871565769658,
+    "validation_ece_10": 0.058805602434330244,
+    "test_n": 31725,
+    "test_accuracy": 0.8357131599684792,
+    "test_mean_confidence": 0.7785222987380903,
+    "test_ece_10": 0.05819784204071203
+  },
+  "lc_family_fusion_rf_light": {
+    "validation_n": 31719,
+    "validation_accuracy": 0.7007787130741827,
+    "validation_mean_confidence": 0.5356820616918685,
+    "validation_ece_10": 0.16509665138231422,
+    "test_n": 31725,
+    "test_accuracy": 0.7003624901497242,
+    "test_mean_confidence": 0.5361248542663147,
+    "test_ece_10": 0.16423763588340942
+  }
+}

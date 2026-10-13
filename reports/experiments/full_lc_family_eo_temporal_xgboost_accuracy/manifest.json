@@ -1,0 +1,11 @@
+{
+  "feature_dir": "data/study/features_full_lc_family",
+  "feature_sets": [
+    "eo_temporal"
+  ],
+  "models": [
+    "xgboost_accuracy"
+  ],
+  "random_state": 42,
+  "max_train_rows": null
+}

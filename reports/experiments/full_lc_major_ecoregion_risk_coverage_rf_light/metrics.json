@@ -1,0 +1,52 @@
+{
+  "ecoregion_fold_0": {
+    "confidence": {
+      "validation_aurc": 0.07359370565252159,
+      "test_aurc": 0.07337056019583721
+    },
+    "min_conf_agreement": {
+      "validation_aurc": 0.07656011676350767,
+      "test_aurc": 0.07688993410083932
+    }
+  },
+  "ecoregion_fold_1": {
+    "confidence": {
+      "validation_aurc": 0.07012718050468664,
+      "test_aurc": 0.07019720309457328
+    },
+    "min_conf_agreement": {
+      "validation_aurc": 0.07185620120651426,
+      "test_aurc": 0.07348334667462922
+    }
+  },
+  "ecoregion_fold_2": {
+    "confidence": {
+      "validation_aurc": 0.08815946664505314,
+      "test_aurc": 0.070826878039793
+    },
+    "min_conf_agreement": {
+      "validation_aurc": 0.09040177068913052,
+      "test_aurc": 0.07304638926691435
+    }
+  },
+  "ecoregion_fold_3": {
+    "confidence": {
+      "validation_aurc": 0.12837916241638078,
+      "test_aurc": 0.08985490726547904
+    },
+    "min_conf_agreement": {
+      "validation_aurc": 0.1316118007545289,
+      "test_aurc": 0.09191013661772662
+    }
+  },
+  "ecoregion_fold_4": {
+    "confidence": {
+      "validation_aurc": 0.0713491206867195,
+      "test_aurc": 0.13740856265117357
+    },
+    "min_conf_agreement": {
+      "validation_aurc": 0.07403776519753381,
+      "test_aurc": 0.14172432725466133
+    }
+  }
+}

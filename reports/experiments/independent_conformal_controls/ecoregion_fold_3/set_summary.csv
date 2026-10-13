@@ -1,0 +1,15 @@
+fold,protocol,method,n_test,set_coverage,mean_set_size,singleton_rate,empty_rate,all_label_rate,macro_set_coverage
+ecoregion_fold_3,source_calibration_original_test,split_independent,42271,0.8503702301814483,1.9431998296704596,0.46663196990844785,0.0,0.0,0.5538501628836264
+ecoregion_fold_3,source_calibration_original_test,split_shared_validation,42271,0.8975893638664806,2.5431856355420974,0.3016725414586833,0.0,0.0,0.6358688579618996
+ecoregion_fold_3,source_calibration_original_test,class_conditional_canonical,42271,0.861867474154858,4.527122613612169,0.0,0.0,0.0,0.8664572684967033
+ecoregion_fold_3,source_calibration_original_test,weighted_histogram,42271,0.8520025549431052,1.961226372690497,0.46090700480234675,0.0,0.0,0.556214971450554
+ecoregion_fold_3,source_calibration_original_test,clisf_bias_adjusted_B2,42271,1.0,13.0,0.0,0.0,1.0,1.0
+ecoregion_fold_3,source_calibration_original_test,clisf_bias_adjusted_B5,42271,1.0,13.0,0.0,0.0,1.0,1.0
+ecoregion_fold_3,source_calibration_original_test,clisf_bias_adjusted_B10,42271,1.0,13.0,0.0,0.0,1.0,1.0
+ecoregion_fold_3,source_calibration_original_test,clisf_bias_adjusted_B20,42271,0.8546048118095148,1.984410115682146,0.4533604598897589,0.0,0.0,0.5609495502057136
+ecoregion_fold_3,labeled_target_adaptation_shared_evaluation,split_independent,25346,0.848141718614377,1.9483547699834294,0.46354454351771485,0.0,0.0,0.5481612589786236
+ecoregion_fold_3,labeled_target_adaptation_shared_evaluation,weighted_histogram,25346,0.8500749625187406,1.9670953996685867,0.4580209895052474,0.0,0.0,0.5512055053334808
+ecoregion_fold_3,labeled_target_adaptation_shared_evaluation,clisf_bias_adjusted_B5,25346,1.0,13.0,0.0,0.0,1.0,1.0
+ecoregion_fold_3,labeled_target_adaptation_shared_evaluation,target_split,25346,0.8945790262763356,2.5314448039138324,0.30241458218259293,0.0,0.0,0.6265257390964063
+ecoregion_fold_3,labeled_target_adaptation_shared_evaluation,target_acp_renorm,25346,0.8911859859543912,2.4095320760672294,0.37141955338120414,0.0,0.0,0.6120458557738959
+ecoregion_fold_3,labeled_target_adaptation_shared_evaluation,target_audited_groups,25346,0.8955653752071333,2.570464767616192,0.4328099108340567,0.0,0.0,0.630269029581616

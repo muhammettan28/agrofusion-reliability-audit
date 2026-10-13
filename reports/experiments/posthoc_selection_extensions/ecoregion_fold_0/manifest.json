@@ -1,0 +1,19 @@
+{
+  "inputs": {
+    "reports/experiments/reliability_controls/ecoregion_fold_0/records.parquet": "8d7906334b379700e02de06c8fdc7f147487b15b395c9db57d6f10bdb252ba13",
+    "reports/experiments/reliability_controls/ecoregion_fold_0/family_posterior.npz": "24050ae2e5d54b9567236be8d7239fcb2ecc569d7dd3578e08460373768d1979"
+  },
+  "targets": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    0.95
+  ],
+  "tie_handling": "risk curves include score ties as a block; exact-budget masks use stable record order independent of labels",
+  "class_aware": "predicted-class empirical CDF acceptance; true labels used only for evaluation, not per-record selection; adaptation rather than claimed exact reproduction of Sa\u011flam et al.",
+  "macro_risk": "mean within-true-family AURC using family-specific accepted coverage",
+  "matched_test_rank": "descriptive comparison only, no test-label threshold selection and no deployable equal-coverage claim",
+  "test_labels_used_for_selection": false
+}

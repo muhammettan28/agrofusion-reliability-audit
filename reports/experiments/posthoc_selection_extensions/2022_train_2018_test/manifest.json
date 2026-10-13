@@ -1,0 +1,19 @@
+{
+  "inputs": {
+    "reports/experiments/reliability_controls/2022_train_2018_test/records.parquet": "267b8ac89fc8b9aadf40fae39917b289c82b06bce156ec995086fb8ffe498140",
+    "reports/experiments/reliability_controls/2022_train_2018_test/family_posterior.npz": "572a145b6a7defc83510cac834988a8921b2705423b26b1b093a8117a71bf89c"
+  },
+  "targets": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    0.95
+  ],
+  "tie_handling": "risk curves include score ties as a block; exact-budget masks use stable record order independent of labels",
+  "class_aware": "predicted-class empirical CDF acceptance; true labels used only for evaluation, not per-record selection; adaptation rather than claimed exact reproduction of Sa\u011flam et al.",
+  "macro_risk": "mean within-true-family AURC using family-specific accepted coverage",
+  "matched_test_rank": "descriptive comparison only, no test-label threshold selection and no deployable equal-coverage claim",
+  "test_labels_used_for_selection": false
+}

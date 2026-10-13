@@ -1,0 +1,3 @@
+fold,original_fine_test,excluded_source_year_points,new_site_test,observed_true_families,source_training_records,source_validation_records,exclusion,thresholds
+2018_train_2022_test,103838,43448,60390,13,91499,16143,"Any point in the source year, including validation-only points","Previously selected full-fold validation policies, unchanged"
+2022_train_2018_test,107642,43449,64193,13,88265,15576,"Any point in the source year, including validation-only points","Previously selected full-fold validation policies, unchanged"

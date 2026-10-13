@@ -1,0 +1,25 @@
+{
+  "predictions": "reports/experiments/full_lc_family_per_major_specialists_xgboost_accuracy/predicted_major_predictions.parquet",
+  "family_scores": [
+    "joint_confidence",
+    "confidence"
+  ],
+  "family_coverages": [
+    0.3,
+    0.5,
+    0.7,
+    0.8
+  ],
+  "backoff_coverages": [
+    0.8,
+    0.9,
+    0.95,
+    1.0
+  ],
+  "validation_tuned": true,
+  "policy_selection_split": "validation",
+  "minimum_validation_actionable_coverage": 0.8,
+  "balanced_family_target": 0.5,
+  "selection_objective": "validation tier accuracy, then family rate, then actionable coverage",
+  "predictions_sha256": "86807c06ed75291339ba670e5fa4b67756aa0c6f74a720bdfc5a2159d0ae78bf"
+}

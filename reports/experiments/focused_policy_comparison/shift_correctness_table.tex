@@ -1,0 +1,20 @@
+\begin{table}[pos=htbp]
+\centering\scriptsize
+\setlength{\tabcolsep}{2.2pt}
+\caption{Controlled policies under shift, with validation-only selection in each fold. Values are fold means $\pm$ sample SD over two temporal directions or five ecoregion folds; these summaries are descriptive and ecoregion training folds overlap; family-output rates are means and $Z$ is the zero-answered count range. $\bar q$ and $\bar f$ average correct emitted-label and correct family coverage over each fold's observed true families. Per-fold values are in Supplementary Table~S8. These are single-seed fold summaries, separate from the five-seed fold-4 comparison in Supplementary Table~S14. No normal-split threshold transfer or independent-dataset replication is implied.}
+\label{tab:controlled_shift}
+\begin{tabular}{llrrrrrrr}
+\toprule
+Shift & Policy & $c_{\mathrm{agg}}$ & $\bar c$ & $\bar q$ & $\bar f$ & \shortstack{Family-output\\rate} & Tier acc. & $Z$ \\
+\midrule
+Temporal & Direct MSP & $0.773\pm0.003$ & $0.567\pm0.011$ & $0.270\pm0.001$ & $0.270\pm0.001$ & 0.773 & $0.799\pm0.010$ & 0--0 \\
+Temporal & Same-predictor & $0.782\pm0.017$ & $0.638\pm0.019$ & $0.485\pm0.019$ & $0.077\pm0.005$ & 0.232 & $0.895\pm0.005$ & 0--0 \\
+Temporal & Conditional & $0.794\pm0.019$ & $0.665\pm0.034$ & $0.500\pm0.019$ & $0.076\pm0.009$ & 0.246 & $0.889\pm0.005$ & 0--0 \\
+Temporal & Climbing & $0.786\pm0.015$ & $0.642\pm0.016$ & $0.430\pm0.021$ & $0.191\pm0.008$ & 0.567 & $0.858\pm0.015$ & 0--0 \\
+Ecoregion & Direct MSP & $0.784\pm0.140$ & $0.624\pm0.155$ & $0.268\pm0.038$ & $0.268\pm0.038$ & 0.784 & $0.789\pm0.033$ & 0--1 \\
+Ecoregion & Same-predictor & $0.781\pm0.125$ & $0.672\pm0.118$ & $0.483\pm0.055$ & $0.101\pm0.035$ & 0.310 & $0.883\pm0.024$ & 0--0 \\
+Ecoregion & Conditional & $0.792\pm0.101$ & $0.684\pm0.096$ & $0.492\pm0.041$ & $0.092\pm0.028$ & 0.302 & $0.878\pm0.022$ & 0--0 \\
+Ecoregion & Climbing & $0.783\pm0.126$ & $0.673\pm0.118$ & $0.426\pm0.035$ & $0.188\pm0.041$ & 0.575 & $0.849\pm0.029$ & 0--0 \\
+\bottomrule
+\end{tabular}
+\end{table}

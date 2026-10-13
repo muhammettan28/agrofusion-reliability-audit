@@ -1,0 +1,16 @@
+{
+  "feature_dir": "data/study/features_full_lc_family",
+  "feature_sets": [
+    "alphaearth",
+    "eo_temporal",
+    "weather",
+    "soil",
+    "topography",
+    "fusion"
+  ],
+  "models": [
+    "xgboost_fast"
+  ],
+  "random_state": 42,
+  "max_train_rows": null
+}

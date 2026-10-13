@@ -1,0 +1,13 @@
+group,protocol,method,n_folds,set_coverage_mean,set_coverage_sd,mean_set_size_mean,mean_set_size_sd,low_coverage_mean,low_coverage_sd
+Temporal,source_calibration_original_test,split_independent,2,0.8775803653028336,0.014983951732849806,2.154127693252012,0.06917728660248472,,
+Ecoregion,source_calibration_original_test,split_independent,5,0.8742123918559415,0.015713206076769685,2.1433171236265816,0.3505921320260229,,
+Temporal,source_calibration_original_test,weighted_histogram,2,0.8757131620434265,0.003041262197289642,2.124331983085167,0.09507195025857121,,
+Ecoregion,source_calibration_original_test,weighted_histogram,5,0.8769509469853313,0.016726995477299656,2.1790642380195684,0.3625290598827286,,
+Temporal,source_calibration_original_test,clisf_bias_adjusted_B2,2,1.0,0.0,13.0,0.0,,
+Ecoregion,source_calibration_original_test,clisf_bias_adjusted_B2,5,1.0,0.0,13.0,0.0,,
+Temporal,source_calibration_original_test,clisf_bias_adjusted_B20,2,0.9027005695108583,0.025323657594544243,2.5815960593743217,0.6044739259843063,,
+Ecoregion,source_calibration_original_test,clisf_bias_adjusted_B20,5,0.8774713983586132,0.015769770562962478,2.1837009866178985,0.35917915850652615,,
+Temporal,labeled_target_adaptation_shared_evaluation,target_split,2,0.8997558552624654,0.002120360285401555,2.4964468431904576,0.19159070324886146,0.8821583799522916,0.005947130650180123
+Ecoregion,labeled_target_adaptation_shared_evaluation,target_split,5,0.8999344834324088,0.007342758766642156,2.508854976387879,0.29712030779491116,0.8764242895276285,0.011835934213843505
+Temporal,labeled_target_adaptation_shared_evaluation,target_audited_groups,2,0.8992389378464639,0.0023747060078559597,2.492110021766844,0.1870779098710304,0.9002976607882283,0.00025808387897701556
+Ecoregion,labeled_target_adaptation_shared_evaluation,target_audited_groups,5,0.9011550161368636,0.006384277212282846,2.541604638858186,0.29810613041397716,0.89755935710182,0.009220786482655181

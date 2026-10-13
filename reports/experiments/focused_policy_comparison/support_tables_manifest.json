@@ -1,0 +1,20 @@
+{
+  "analysis": "Reporting-only aggregation of existing validation-selected outputs",
+  "inputs_sha256": {
+    "reports/experiments/classwise_correctness/controlled_summary.csv": "8be520625e288d3406ac30b87aae899121e060966558b5f09877a15d1c4d9ed6",
+    "reports/experiments/posthoc_selection_extensions/normal/budget_summary.csv": "ee966126428a1b0b3631688d7639e41f85339adb6923b824bd41435b2e170f29",
+    "reports/experiments/independent_conformal_controls/all_set_summary.csv": "1421456b4568ae59c5f0fff4e5d392acc8be419f4e52a002a8e75a754c10db91",
+    "reports/experiments/posthoc_selection_extensions/all_budget_summary.csv": "8660c52c25367469f631c0c7b354037686d076dcb137d3266c973683d836bd1d",
+    "reports/experiments/robustness_sensitivities/augrc_summary.csv": "66de196e2f0c98397f82ed47869be0aa17404cdb92bd7036e5a8f25eda5a004c",
+    "reports/experiments/robustness_sensitivities/new_site_temporal_summary.csv": "eafbd681bf5c741e96153a49b0ad8c8a5bf500ec19a2844697e1035a450f10ba",
+    "reports/experiments/independent_conformal_controls/2018_train_2022_test/manifest.json": "9a0a1794eb3c150553827f422df5c86b6a3b58708bd1229f7fe13ec39e5142b1",
+    "reports/experiments/independent_conformal_controls/2022_train_2018_test/manifest.json": "7158ffaa90b17c504e956bc0c6cdb5ca71b93c94a41befe51c82f57168786ccc",
+    "reports/experiments/independent_conformal_controls/ecoregion_fold_0/manifest.json": "78db8474918fdc4d6bfad9a651f08104474d15b212861a49793ada7809136c3e",
+    "reports/experiments/independent_conformal_controls/ecoregion_fold_1/manifest.json": "fe89a5bccb4be264e657570671a41feb93006bac1601d7a77acff7c5bf90fd70",
+    "reports/experiments/independent_conformal_controls/ecoregion_fold_2/manifest.json": "8e010c5fbe5fd9000b729537eec19c53e0cbbbd1ad0a19dc9166cf77ffd3e500",
+    "reports/experiments/independent_conformal_controls/ecoregion_fold_3/manifest.json": "b55ac7bfff06beb64d0cd0d974616fae24f9b0c59976c3e3ab7fe602ca7e8816",
+    "reports/experiments/independent_conformal_controls/ecoregion_fold_4/manifest.json": "6fa38e2521479bd21d0badd370abf1412a29f0e6249871701e26f7a2d088422d"
+  },
+  "new_training_or_test_selected_policy": false,
+  "aggregation": "Unweighted fold mean and sample SD; protocols remain separate"
+}

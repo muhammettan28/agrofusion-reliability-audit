@@ -1,0 +1,41 @@
+{
+  "scenarios": {
+    "coarse_useful": {
+      "B": 0.1,
+      "E": 0.1,
+      "F": 0.1
+    },
+    "family_required": {
+      "B": 1.0,
+      "E": 1.0,
+      "F": 1.0
+    },
+    "detail_B_priority": {
+      "B": 0.5,
+      "E": 0.25,
+      "F": 0.1
+    },
+    "detail_F_priority": {
+      "B": 0.1,
+      "E": 0.25,
+      "F": 0.5
+    }
+  },
+  "wrong_answer_cost": 1.0,
+  "correct_family_cost": 0.0,
+  "abstention_costs": [
+    0.2,
+    0.4,
+    0.6
+  ],
+  "validation_answering_floors": [
+    null,
+    0.5,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "interpretation": "illustrative sensitivity; branch-specific costs are hypothetical, not measured application preferences; conditional on raw posterior quality; no risk-optimal-conformal claim",
+  "operating_rule": "minimize posterior expected loss, relaxing abstention boundary only as required by a prespecified validation answering floor",
+  "test_labels_used_for_selection": false
+}

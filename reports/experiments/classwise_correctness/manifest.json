@@ -1,0 +1,39 @@
+{
+  "historical_prediction_sha256": {
+    "local_archive/reports/experiments/full_lc_family_xgboost_accuracy_fusion/fusion/xgboost_accuracy/predictions.parquet": "486195c87af6b47d3f2b52f1ddc009d6c278cd5f9d38583b5b4c4cde5b5b3a69",
+    "local_archive/reports/experiments/full_lc_family_per_major_specialists_xgboost_accuracy/predicted_major_predictions.parquet": "86807c06ed75291339ba670e5fa4b67756aa0c6f74a720bdfc5a2159d0ae78bf",
+    "local_archive/reports/experiments/class_weighted_backbone_coverage_gap/predictions_class_weighted.parquet": "0aaec9c84abd4f6e3ecad460cf1a9f123105166054ff75d534e5b308c0298c32"
+  },
+  "historical_threshold_sha256": {
+    "reports/experiments/full_lc_family_hierarchical_backoff_policy_xgboost_accuracy/selected_policies.csv": "313b38594e1e33bfb0650bcaf065c31637dc8821bd1cf9e3a58aded311e5073a",
+    "reports/experiments/classwise_selective_coverage_lc_family_xgboost_accuracy/selected_policies.csv": "42d9c4650edfa465ca188d76dab16e76f7268013aed0c00d752fca60314e2b63",
+    "reports/experiments/class_weighted_backbone_coverage_gap/classwise_class_weighted/selected_policies.csv": "348b4e9453df7c3f35bac0d3261ebcf1072a9fbc7a9057c3be8d65a9808cf813"
+  },
+  "action_sha256": {
+    "reports/experiments/reliability_controls/2018_train_2022_test/evaluation/test_actions.parquet": "c3cd80cbe7ae59956f3afd1da67932b586c7ef5744a63191eef948706a9e81d8",
+    "reports/experiments/reliability_controls/2022_train_2018_test/evaluation/test_actions.parquet": "2d63cb2289670b15f3c42b440208c1eab8e4f1515894b97b1396adaf6142a669",
+    "reports/experiments/reliability_controls/ecoregion_fold_0/evaluation/test_actions.parquet": "8f0f045b493b80cac870768c222be14f95e3d80bed9624dafe9753a98876365e",
+    "reports/experiments/reliability_controls/ecoregion_fold_1/evaluation/test_actions.parquet": "2fe7df97cf3b5f09dcefd7c2c1ac6a81df85ebd3b12ec9c217ec71da74cad24a",
+    "reports/experiments/reliability_controls/ecoregion_fold_2/evaluation/test_actions.parquet": "e6e6f03a69d9f68173686ea61bfeee0cf3eb7ef40d15571c312d97f2ea81c423",
+    "reports/experiments/reliability_controls/ecoregion_fold_3/evaluation/test_actions.parquet": "eb227dd5e41662f14e58ede1d6e40bb73ccfc3dbc6718cf969eed17725265f8a",
+    "reports/experiments/reliability_controls/ecoregion_fold_4/evaluation/test_actions.parquet": "6e043856f5f42c28d0c0b451d99d3f511280233e4cda93ce705bb18d26bb7940",
+    "reports/experiments/reliability_controls/normal/evaluation/test_actions.parquet": "1514d7e2245b153a054b00502e0f9ca667b385b509786fc82c1f032a9d455e04",
+    "reports/experiments/training_seed_stability/seed_101/ecoregion_fold_4/evaluation/test_actions.parquet": "da723e5a7468352649c39d31485796cb28d6c310634dbb283b704c67953c8b70",
+    "reports/experiments/training_seed_stability/seed_101/normal/evaluation/test_actions.parquet": "0677ebe5e4c174a6f1973ff9713163c9b986a1862b216b7e7dc467e22fd45af3",
+    "reports/experiments/training_seed_stability/seed_17/ecoregion_fold_4/evaluation/test_actions.parquet": "9ba635f458546a9f64937a1ce6f72db74d3fd04c1de1f60ab9a2c17f3868f285",
+    "reports/experiments/training_seed_stability/seed_17/normal/evaluation/test_actions.parquet": "692490a4710e67ca2af810de6ee77518d346bd9d019e4a63850c2c7aad00b1c8",
+    "reports/experiments/training_seed_stability/seed_42/ecoregion_fold_4/evaluation/test_actions.parquet": "6e043856f5f42c28d0c0b451d99d3f511280233e4cda93ce705bb18d26bb7940",
+    "reports/experiments/training_seed_stability/seed_42/normal/evaluation/test_actions.parquet": "1514d7e2245b153a054b00502e0f9ca667b385b509786fc82c1f032a9d455e04",
+    "reports/experiments/training_seed_stability/seed_7/ecoregion_fold_4/evaluation/test_actions.parquet": "0ea9e1816e0ba1155724a33d76ded2764b1af349cc0e15f7dd6b421e98296858",
+    "reports/experiments/training_seed_stability/seed_7/normal/evaluation/test_actions.parquet": "503bfaa688417cd818a4f942238e8b465cfcaed0d86a3fd44a9684b1770ffacc",
+    "reports/experiments/training_seed_stability/seed_83/ecoregion_fold_4/evaluation/test_actions.parquet": "a7ba831c94d18658b94ed4011e56a2e8992a6e315d735fcdbba96b69f3bb53d8",
+    "reports/experiments/training_seed_stability/seed_83/normal/evaluation/test_actions.parquet": "524fe633bfe5d0de2fbdb280cad635e8ed3fb4811e59c46f4e528dc12afe523d"
+  },
+  "historical_policy_selection": "released validation-selected thresholds, unchanged",
+  "policy_selection_or_training_performed": false,
+  "correct_answer_coverage": "correct emitted-level answers / true-family support",
+  "correct_family_coverage": "correct family-level answers / true-family support",
+  "accepted_tier_accuracy": "correct emitted-level answers / answered records; undefined at zero answers",
+  "macro": "unweighted mean over test-observed true families",
+  "limitations": "descriptive fixed-policy results; no new CIs or independent observations from pooling seeds"
+}

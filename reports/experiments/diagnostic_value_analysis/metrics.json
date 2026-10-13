@@ -1,0 +1,58 @@
+{
+  "agreement_bands": [
+    0.0,
+    0.45,
+    0.55,
+    0.7,
+    0.85,
+    1.01
+  ],
+  "coverage_targets": [
+    0.5,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "frames": [
+    {
+      "scenario": "normal_split",
+      "fold": "normal_split",
+      "rows": 63444
+    },
+    {
+      "scenario": "temporal_shift",
+      "fold": "2018_train_2022_test",
+      "rows": 119984
+    },
+    {
+      "scenario": "temporal_shift",
+      "fold": "2022_train_2018_test",
+      "rows": 123218
+    },
+    {
+      "scenario": "ecoregion_shift",
+      "fold": "ecoregion_fold_0",
+      "rows": 84595
+    },
+    {
+      "scenario": "ecoregion_shift",
+      "fold": "ecoregion_fold_1",
+      "rows": 84612
+    },
+    {
+      "scenario": "ecoregion_shift",
+      "fold": "ecoregion_fold_2",
+      "rows": 84563
+    },
+    {
+      "scenario": "ecoregion_shift",
+      "fold": "ecoregion_fold_3",
+      "rows": 84597
+    },
+    {
+      "scenario": "ecoregion_shift",
+      "fold": "ecoregion_fold_4",
+      "rows": 84599
+    }
+  ]
+}

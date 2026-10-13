@@ -1,0 +1,18 @@
+{
+  "feature_path": "data/study/features_full_lc_family/pilot_fusion.parquet",
+  "major_predictions": "reports/experiments/full_lc_major_xgboost_accuracy_fusion/fusion/xgboost_accuracy/predictions.parquet",
+  "direct_family_predictions": "reports/experiments/full_lc_family_xgboost_accuracy_fusion/fusion/xgboost_accuracy/predictions.parquet",
+  "feature_columns": 568,
+  "model_name": "xgboost_accuracy",
+  "models": [
+    "B",
+    "E",
+    "F"
+  ],
+  "coverage_targets": [
+    0.5,
+    0.7,
+    0.8,
+    0.9
+  ]
+}

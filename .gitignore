@@ -1,0 +1,69 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.python-version
+
+# Tooling
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+.ipynb_checkpoints/
+.dvc/
+.DS_Store
+
+# Editor
+.vscode/*
+!.vscode/settings.json
+.idea/
+
+# LaTeX build artifacts
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.synctex.gz
+paper/*.toc
+paper/*.abs
+
+# Large data / model artifacts — NOT committed.
+# Obtain the AgroFusion dataset from https://github.com/stemauro/agrofusion
+# and build the tabular feature sets locally (see README).
+data/study/**/*.parquet
+data/2018/
+data/2022/
+data/external/
+data/interim/
+data/processed/
+*.pt
+*.pth
+*.safetensors
+*.npz
+
+# Bulky experiment artifacts (only summaries and small result tables are tracked)
+reports/experiments/**/*.parquet
+reports/experiments/**/states/
+reports/**/*.zip
+
+LATEX/*
+AgroFusion
+/local_archive
+# Local source-data archive and regenerated per-example backoff actions
+/Untitled Folder/
+reports/experiments/**/best_policy_test_actions.csv
+
+# Private manuscript material
+/reproducibility/private_manuscript/
+
+# Local journal-submission files
+/supplementary/submission/

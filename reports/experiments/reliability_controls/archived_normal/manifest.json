@@ -1,0 +1,12 @@
+{
+  "inputs_sha256": {
+    "local_archive/reports/experiments/full_lc_family_xgboost_accuracy_fusion/fusion/xgboost_accuracy/predictions.parquet": "486195c87af6b47d3f2b52f1ddc009d6c278cd5f9d38583b5b4c4cde5b5b3a69",
+    "local_archive/reports/experiments/full_lc_family_per_major_specialists_xgboost_accuracy/predicted_major_predictions.parquet": "86807c06ed75291339ba670e5fa4b67756aa0c6f74a720bdfc5a2159d0ae78bf",
+    "local_archive/reports/experiments/class_weighted_backbone_coverage_gap/predictions_class_weighted.parquet": "0aaec9c84abd4f6e3ecad460cf1a9f123105166054ff75d534e5b308c0298c32"
+  },
+  "n_bootstrap": 1000,
+  "seed": 42,
+  "CI_method": "paired class-stratified record bootstrap, fixed archived models/policies/supports",
+  "per_class_intervals": "Wilson score intervals; paired percentile bootstrap for differences",
+  "limitations": "not simultaneous; no spatial/refitting/threshold-selection uncertainty"
+}

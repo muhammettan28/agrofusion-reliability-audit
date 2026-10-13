@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering\footnotesize
+\setlength{\tabcolsep}{2.3pt}
+\caption{Confidence ranking on the selected full-feature FT-Transformer, at descriptive matched 0.80 test answering coverage. The classifier prediction remains fixed for every confidence score. Geometric margin is the top-two signed linear-head distance gap, including each head's bias via its logit. Geometric results apply to this normal neural fit; tree log-probability margins across all eight splits are reported separately in Table~\ref{tab:supp-matched-selection}. Per-family correctness and validation-selected deployment thresholds remain in the public CSVs.}\label{tab:supp-neural-margins}
+\begin{tabular}{lrrrrr}
+\toprule
+Score & Macro answered & Macro correct fine & Accepted acc. & AURC & CA-AURC \\
+\midrule
+MSP & 0.5969 & 0.3394 & 0.8221 & 0.1023 & 0.5259 \\
+Probability margin & 0.6363 & 0.3420 & 0.8208 & 0.1035 & 0.5275 \\
+Logit margin & 0.6560 & 0.3419 & 0.8171 & 0.1067 & 0.5291 \\
+Predicted-class percentile & 0.6877 & 0.3791 & 0.8132 & 0.1196 & 0.4274 \\
+Geometric margin & 0.6204 & 0.3274 & 0.8167 & 0.1075 & 0.5467 \\
+\bottomrule
+\end{tabular}
+\end{table}

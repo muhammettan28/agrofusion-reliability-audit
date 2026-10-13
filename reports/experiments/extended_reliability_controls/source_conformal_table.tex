@@ -1,0 +1,35 @@
+\begin{table}[htbp]
+\centering\scriptsize
+\setlength{\tabcolsep}{2.3pt}
+\caption{Role-separated conformal controls on each original test partition, using newly fitted predictors with calibration reserved before training. Coverage target is 0.90. CP denotes conformal prediction. Canonical class thresholds retain all 13 families and use infinity for insufficient support. Weighting uses unlabeled target covariates; clipped histogram LSIF uses empirical bias inflation and no certified density-error bound. All-label sets give coverage one at size 13. Shift rows are descriptive means $\pm$ fold SD.}\label{tab:supp-independent-conformal}
+\begin{tabular}{llrrr}
+\toprule
+Split & Calibration rule & Set coverage & Macro cov. & Set size \\
+\midrule
+Normal & Tuning-pool quantile & 0.8977 & 0.6627 & 2.0470 \\
+Normal & Independent source CP & 0.9013 & 0.6694 & 2.0986 \\
+Normal & Canonical class-conditional & 0.9036 & 0.9206 & 4.3489 \\
+Normal & Estimated weighted CP & 0.9017 & 0.6701 & 2.1009 \\
+Normal & CLISF + bias, $B=2$ & 0.9017 & 0.6701 & 2.1009 \\
+Normal & CLISF + bias, $B=5$ & 0.9017 & 0.6701 & 2.1009 \\
+Normal & CLISF + bias, $B=10$ & 0.9017 & 0.6701 & 2.1009 \\
+Normal & CLISF + bias, $B=20$ & 0.9017 & 0.6701 & 2.1009 \\
+Temporal & Tuning-pool quantile & $0.8766\pm0.0228$ & $0.6149\pm0.0302$ & $2.1447\pm0.1762$ \\
+Temporal & Independent source CP & $0.8776\pm0.0150$ & $0.6165\pm0.0173$ & $2.1541\pm0.0692$ \\
+Temporal & Canonical class-conditional & $0.8872\pm0.0129$ & $0.8967\pm0.0186$ & $4.6821\pm0.3404$ \\
+Temporal & Estimated weighted CP & $0.8757\pm0.0030$ & $0.6130\pm0.0034$ & $2.1243\pm0.0951$ \\
+Temporal & CLISF + bias, $B=2$ & $1.0000\pm0.0000$ & $1.0000\pm0.0000$ & $13.0000\pm0.0000$ \\
+Temporal & CLISF + bias, $B=5$ & $1.0000\pm0.0000$ & $1.0000\pm0.0000$ & $13.0000\pm0.0000$ \\
+Temporal & CLISF + bias, $B=10$ & $1.0000\pm0.0000$ & $1.0000\pm0.0000$ & $13.0000\pm0.0000$ \\
+Temporal & CLISF + bias, $B=20$ & $0.9027\pm0.0253$ & $0.6598\pm0.0530$ & $2.5816\pm0.6045$ \\
+Ecoregion & Tuning-pool quantile & $0.8997\pm0.0068$ & $0.6549\pm0.0238$ & $2.4961\pm0.2649$ \\
+Ecoregion & Independent source CP & $0.8742\pm0.0157$ & $0.6063\pm0.0443$ & $2.1433\pm0.3506$ \\
+Ecoregion & Canonical class-conditional & $0.8768\pm0.0147$ & $0.8731\pm0.0330$ & $4.6393\pm0.5121$ \\
+Ecoregion & Estimated weighted CP & $0.8770\pm0.0167$ & $0.6112\pm0.0454$ & $2.1791\pm0.3625$ \\
+Ecoregion & CLISF + bias, $B=2$ & $1.0000\pm0.0000$ & $1.0000\pm0.0000$ & $13.0000\pm0.0000$ \\
+Ecoregion & CLISF + bias, $B=5$ & $1.0000\pm0.0000$ & $1.0000\pm0.0000$ & $13.0000\pm0.0000$ \\
+Ecoregion & CLISF + bias, $B=10$ & $1.0000\pm0.0000$ & $1.0000\pm0.0000$ & $13.0000\pm0.0000$ \\
+Ecoregion & CLISF + bias, $B=20$ & $0.8775\pm0.0158$ & $0.6122\pm0.0440$ & $2.1837\pm0.3592$ \\
+\bottomrule
+\end{tabular}
+\end{table}

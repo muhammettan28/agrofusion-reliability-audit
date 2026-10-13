@@ -1,0 +1,15 @@
+{
+  "targets": [
+    "lc_family"
+  ],
+  "alphas": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "random_state": 42,
+  "model_name": "xgboost_accuracy",
+  "feature_paths": {
+    "lc_family": "data/study/features_full_lc_family/pilot_fusion.parquet"
+  }
+}

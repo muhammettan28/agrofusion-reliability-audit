@@ -1,0 +1,5 @@
+numpy==2.5.3
+scipy==1.18.1
+polars==1.44.2
+scikit-learn==1.9.1
+rtdl-revisiting-models==0.0.2

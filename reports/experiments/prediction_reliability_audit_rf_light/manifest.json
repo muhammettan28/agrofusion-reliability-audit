@@ -1,0 +1,7 @@
+{
+  "predictions": {
+    "lc_major_fusion_rf_light": "reports/experiments/full_lc_major_sklearn_rf_light_fusion/fusion/random_forest_light/predictions.parquet",
+    "lc_family_fusion_rf_light": "reports/experiments/full_lc_family_sklearn_rf_light_fusion/fusion/random_forest_light/predictions.parquet"
+  },
+  "bins": 10
+}

@@ -1,0 +1,16 @@
+{
+  "feature_path": "data/study/features_full_lc_family/pilot_fusion.parquet",
+  "specialist_dir": "reports/experiments/full_lc_family_xgboost_fast_all",
+  "output_dir": "reports/experiments/posthoc_modality_audit_xgboost_fast_lc_family",
+  "model_name": "xgboost_fast",
+  "target_name": "lc_family",
+  "random_state": 42,
+  "modalities": [
+    "alphaearth",
+    "eo_temporal",
+    "weather",
+    "soil",
+    "topography"
+  ],
+  "n_test": 31725
+}

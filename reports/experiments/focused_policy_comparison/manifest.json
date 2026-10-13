@@ -1,0 +1,15 @@
+{
+  "analysis": "Reporting-only aggregation of existing fixed-policy outputs",
+  "inputs_sha256": {
+    "reports/experiments/classwise_correctness/controlled_summary.csv": "8be520625e288d3406ac30b87aae899121e060966558b5f09877a15d1c4d9ed6",
+    "reports/experiments/classwise_correctness/archived_normal_summary.csv": "3197eb514ac4e0b938ee40328a839a12f7b43de274dcffc9b04f0861c4061670",
+    "reports/experiments/posthoc_selection_extensions/normal/budget_summary.csv": "ee966126428a1b0b3631688d7639e41f85339adb6923b824bd41435b2e170f29"
+  },
+  "normal_records": 31725,
+  "nominal_validation_coverage": 0.8,
+  "panels": [
+    "Controlled normal refits",
+    "Original normal fits"
+  ],
+  "new_training_or_test_selected_policy": false
+}
