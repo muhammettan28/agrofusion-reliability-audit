@@ -1,4 +1,4 @@
-# Class-Wise Coverage and Hierarchical Backoff
+# Abstain or Coarsen?
 
 This repository contains the code, configurations, and curated results supporting
 the study of class-wise answering, emitted-label correctness, fine-family
@@ -10,6 +10,12 @@ class-aware selection, and class weighting. Neural, calibration, temporal,
 ecoregion, and training-seed analyses provide sensitivity checks. All reported
 experiments use the same AgroFusion dataset; the repository does not claim
 independent-dataset validation.
+
+The decision analysis also evaluates pooled-posterior and training-prior-adjusted
+Bayes actions, together with Gamma-maximin controls over five seed-specific
+posteriors. The prior-adjusted rule targets class-averaged utility over the 13
+evaluated families; its manifests retain the training counts and coarse-label
+mass excluded from that adjustment.
 
 ## Dataset
 
@@ -90,6 +96,8 @@ python -m agrofusion_reliability.evaluation.train_independent_calibration_contro
   --index data/study/index.parquet
 python -m agrofusion_reliability.evaluation.run_independent_conformal_controls
 python -m agrofusion_reliability.evaluation.build_robustness_sensitivity_report
+python -m agrofusion_reliability.evaluation.run_bayes_credal_controls \
+  --index data/study/index.parquet
 python reports/experiments/focused_policy_comparison/build_master_table.py
 python reports/experiments/focused_policy_comparison/build_support_tables.py
 ```

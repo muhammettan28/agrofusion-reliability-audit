@@ -23,5 +23,6 @@
   "tab:supp-neural-margins": "S19",
   "tab:fusion_vs_specialist_vote": "S20",
   "tab:audit_auc": "S21",
-  "tab:supp-new-site-temporal": "S22"
+  "tab:supp-new-site-temporal": "S22",
+  "tab:supp-bayes-credal": "S23"
 }

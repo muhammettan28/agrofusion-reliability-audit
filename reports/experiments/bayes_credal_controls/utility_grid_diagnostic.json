@@ -1,0 +1,14 @@
+{
+  "input": "reports/experiments/training_seed_stability/seed_42/normal",
+  "model_refit": false,
+  "grid_points": 16,
+  "points_above_selected_policy_envelope": {
+    "lambda_0": 15,
+    "lambda_0_5": 12,
+    "lambda_1": 5
+  },
+  "lambda_0_points_above_envelope_and_above_maximum_selected_pooled_answering": 14,
+  "maximum_selected_pooled_answering_rate": 0.8067769897557132,
+  "interpretation": "The selected-policy envelope is not the full-grid envelope. Higher major-answering targets can add correct coarse answers without an error penalty when lambda=0. A positive penalty reduces but does not remove all full-grid exceedances.",
+  "figure_generated": false
+}

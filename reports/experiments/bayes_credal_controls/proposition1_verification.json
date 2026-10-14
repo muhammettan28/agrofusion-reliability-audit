@@ -1,0 +1,7 @@
+{
+  "source": "reports/experiments/classwise_correctness/controlled_classwise.csv",
+  "evaluation_sets": 18,
+  "class_evaluation_comparisons": 233,
+  "violations": [],
+  "result": "pass"
+}

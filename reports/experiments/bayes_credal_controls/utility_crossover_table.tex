@@ -1,0 +1,20 @@
+\begin{table}[pos=htbp]
+\centering\footnotesize
+\caption{Utility crossover points from Proposition~\ref{prop:linear-utility} with $\lambda=0$, computed from Tables~\ref{tab:policy_master} and~\ref{tab:seed_normal_main}. The listed policy has the highest class-averaged realized utility over the stated $\gamma$ interval among the validation-selected policies in that panel. Percentile selection and major-only prediction were not refit across seeds and are omitted from the five-seed panel. Values are point estimates without uncertainty intervals.}
+\label{tab:utility-crossovers}
+\begin{tabular}{lll}
+\toprule
+Panel & $\gamma$ interval & Best policy \\
+\midrule
+Seed 42 & [0.000, 0.553) & Predicted-class percentile \\
+Seed 42 & [0.553, 0.693) & Climbing \\
+Seed 42 & [0.693, 0.873) & Same-predictor backoff \\
+Seed 42 & [0.873, 1.000] & Major-only \\
+\midrule
+Five-seed mean & [0.000, 0.386) & Direct MSP \\
+Five-seed mean & [0.386, 0.684) & Climbing \\
+Five-seed mean & [0.684, 0.723) & Same-predictor backoff \\
+Five-seed mean & [0.723, 1.000] & Conditional backoff \\
+\bottomrule
+\end{tabular}
+\end{table}

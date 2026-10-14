@@ -1,0 +1,93 @@
+{
+  "input_sha256": {
+    "reports/experiments/training_seed_stability/seed_7/normal/records.parquet": "769dcc692f39935dad8fbd549f4e9eb390e2e32278583acd0600817ce7fe7ed2",
+    "reports/experiments/training_seed_stability/seed_7/normal/family_posterior.npz": "068b766066823776081256f9fe4958daf6d42b053798ed18a60a65a61ae81bbf",
+    "reports/experiments/training_seed_stability/seed_17/normal/records.parquet": "769dcc692f39935dad8fbd549f4e9eb390e2e32278583acd0600817ce7fe7ed2",
+    "reports/experiments/training_seed_stability/seed_17/normal/family_posterior.npz": "b79483bf1d4e45065878ea51560eb10b2dcc25989d6ab1d0aee6d5a9b4bd9d79",
+    "reports/experiments/training_seed_stability/seed_42/normal/records.parquet": "769dcc692f39935dad8fbd549f4e9eb390e2e32278583acd0600817ce7fe7ed2",
+    "reports/experiments/training_seed_stability/seed_42/normal/family_posterior.npz": "241142e4f926293d0c14abef582cdddd5bea7af4a25338ac1f4d6eb3e48c8fd5",
+    "reports/experiments/training_seed_stability/seed_83/normal/records.parquet": "769dcc692f39935dad8fbd549f4e9eb390e2e32278583acd0600817ce7fe7ed2",
+    "reports/experiments/training_seed_stability/seed_83/normal/family_posterior.npz": "fb7c33e099116d65f495fe5cf9566e753ea99699e8e6b448fbdc9b73ff33a0c6",
+    "reports/experiments/training_seed_stability/seed_101/normal/records.parquet": "769dcc692f39935dad8fbd549f4e9eb390e2e32278583acd0600817ce7fe7ed2",
+    "reports/experiments/training_seed_stability/seed_101/normal/family_posterior.npz": "00c011a3ae03089dae735c4c378fbbff0581418f67734712bc98029fcddddc2a",
+    "data/study/index.parquet": "900128fdb595c27fa3fc5ee3c534af7faeda1c9e14d9fa8a48c1cf61ba28b785",
+    "reports/experiments/training_seed_stability/seed_7/ecoregion_fold_4/records.parquet": "2ab4c1a86f11c6c46876cfa8eccf4fa4f4e3222a90fe0046235fc87ab9d2bc92",
+    "reports/experiments/training_seed_stability/seed_7/ecoregion_fold_4/family_posterior.npz": "9d5025bfd7774de146fcd2f4fc413b50d841402b709c57dc7686f19f95f8ebd4",
+    "reports/experiments/training_seed_stability/seed_17/ecoregion_fold_4/records.parquet": "2ab4c1a86f11c6c46876cfa8eccf4fa4f4e3222a90fe0046235fc87ab9d2bc92",
+    "reports/experiments/training_seed_stability/seed_17/ecoregion_fold_4/family_posterior.npz": "81340c3283a6d267d82fd03a36d7c9276793509a71ce8dbd29c04d435748621e",
+    "reports/experiments/training_seed_stability/seed_42/ecoregion_fold_4/records.parquet": "2ab4c1a86f11c6c46876cfa8eccf4fa4f4e3222a90fe0046235fc87ab9d2bc92",
+    "reports/experiments/training_seed_stability/seed_42/ecoregion_fold_4/family_posterior.npz": "beb3951961c8317110b285c69bf4b9697215d554491fc4f913a94200dec497ed",
+    "reports/experiments/training_seed_stability/seed_83/ecoregion_fold_4/records.parquet": "2ab4c1a86f11c6c46876cfa8eccf4fa4f4e3222a90fe0046235fc87ab9d2bc92",
+    "reports/experiments/training_seed_stability/seed_83/ecoregion_fold_4/family_posterior.npz": "1d2126e8917846ed0da4cbda0aa2fb76ffebc2e6a37eb6608df30be0031fd28d",
+    "reports/experiments/training_seed_stability/seed_101/ecoregion_fold_4/records.parquet": "2ab4c1a86f11c6c46876cfa8eccf4fa4f4e3222a90fe0046235fc87ab9d2bc92",
+    "reports/experiments/training_seed_stability/seed_101/ecoregion_fold_4/family_posterior.npz": "3c9c481cd34231ff77935c60354d26a929618fb1953fdae0646fb67e1a06473d"
+  },
+  "gammas": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "wrong_penalty": 1.0,
+  "point_rule": "Bayes action from the arithmetic mean of five seed posteriors",
+  "macro_adjustment": "divide evaluated family probabilities by training priors; exclude coarse B/E annotation classes",
+  "fold_metadata": {
+    "normal": {
+      "family_training_counts": {
+        "B1": 50005,
+        "B2": 3875,
+        "B3": 10538,
+        "B4": 2862,
+        "B5": 11140,
+        "B7": 3951,
+        "B8": 4268,
+        "Bx": 133,
+        "E1": 3561,
+        "E2": 44525,
+        "E3": 7327,
+        "F2": 10,
+        "F4": 5841
+      },
+      "excluded_coarse_training_counts": {
+        "B": 2,
+        "E": 1
+      },
+      "coarse_posterior_mass_mean": 2.055923869193066e-05,
+      "coarse_posterior_mass_max": 0.00010160873353015631
+    },
+    "ecoregion_fold_4": {
+      "family_training_counts": {
+        "B1": 45305,
+        "B2": 4595,
+        "B3": 9061,
+        "B4": 2530,
+        "B5": 10185,
+        "B7": 3099,
+        "B8": 3208,
+        "Bx": 133,
+        "E1": 2637,
+        "E2": 36954,
+        "E3": 5696,
+        "F2": 13,
+        "F4": 3465
+      },
+      "excluded_coarse_training_counts": {
+        "B": 2,
+        "E": 1
+      },
+      "coarse_posterior_mass_mean": 2.839176704583224e-05,
+      "coarse_posterior_mass_max": 0.00010423716594232246
+    }
+  },
+  "credal_set": "convex hull of five seed posteriors for each record",
+  "credal_rule": "Gamma-maximin posterior expected utility",
+  "utilities": {
+    "correct_family": 1.0,
+    "correct_major": "gamma",
+    "abstain": 0.0,
+    "incorrect_emitted_label": "-1.0"
+  },
+  "test_labels_used_for_actions": false,
+  "scope": "sensitivity control based on seed-induced posterior variation; not an implementation of Naive Credal Classifier 2"
+}

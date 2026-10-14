@@ -1,0 +1,9 @@
+panel,gamma_lower,gamma_upper,best_policy
+Seed 42,0.0,0.5528950805398345,Predicted-class percentile
+Seed 42,0.5528950805398345,0.6930870083432656,Climbing
+Seed 42,0.6930870083432656,0.872519083969466,Same-predictor backoff
+Seed 42,0.872519083969466,1.0,Major-only
+Five-seed mean,0.0,0.385632437197003,Direct MSP
+Five-seed mean,0.385632437197003,0.6840545346769416,Climbing
+Five-seed mean,0.6840545346769416,0.7232142857142861,Same-predictor backoff
+Five-seed mean,0.7232142857142861,1.0,Conditional backoff

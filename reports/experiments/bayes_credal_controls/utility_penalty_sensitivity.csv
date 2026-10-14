@@ -1,0 +1,23 @@
+lambda,panel,gamma_lower,gamma_upper,best_policy
+0.0,Seed 42,0.0,0.5528950805398345,Predicted-class percentile
+0.0,Seed 42,0.5528950805398345,0.6930870083432656,Climbing
+0.0,Seed 42,0.6930870083432656,0.872519083969466,Same-predictor backoff
+0.0,Seed 42,0.872519083969466,1.0,Major-only
+0.0,Five-seed mean,0.0,0.385632437197003,Direct MSP
+0.0,Five-seed mean,0.385632437197003,0.6840545346769416,Climbing
+0.0,Five-seed mean,0.6840545346769416,0.7232142857142861,Same-predictor backoff
+0.0,Five-seed mean,0.7232142857142861,1.0,Conditional backoff
+0.5,Seed 42,0.0,0.41510666086199377,Predicted-class percentile
+0.5,Seed 42,0.41510666086199377,0.5369487485101309,Climbing
+0.5,Seed 42,0.5369487485101309,0.8301526717557259,Same-predictor backoff
+0.5,Seed 42,0.8301526717557259,1.0,Major-only
+0.5,Five-seed mean,0.0,0.24834728955487,Direct MSP
+0.5,Five-seed mean,0.24834728955487,0.48832684824902745,Climbing
+0.5,Five-seed mean,0.48832684824902745,1.0,Conditional backoff
+1.0,Seed 42,0.0,0.27731824118415305,Predicted-class percentile
+1.0,Seed 42,0.27731824118415305,0.380810488676996,Climbing
+1.0,Seed 42,0.380810488676996,0.7877862595419859,Same-predictor backoff
+1.0,Seed 42,0.7877862595419859,1.0,Major-only
+1.0,Five-seed mean,0.0,0.111062141912737,Direct MSP
+1.0,Five-seed mean,0.111062141912737,0.29016120066703743,Climbing
+1.0,Five-seed mean,0.29016120066703743,1.0,Conditional backoff
