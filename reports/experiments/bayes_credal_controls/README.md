@@ -21,7 +21,13 @@ inverse-prior rule is sensitive to rare-family support and is evaluated as an
 objective-matching diagnostic rather than a deployment recommendation.
 
 `summary.csv` contains aggregate and class-averaged metrics for five gamma
-values at `lambda=1`; `classwise.csv` retains the family-level results.
+values at `lambda=1`; `classwise.csv` retains the family-level results. The
+macro-adjusted rule is also evaluated on the seed-42 posterior alone so that it
+can be compared with the seed-42 threshold policies without an ensemble
+confound. At `gamma=0.5`, this matched-seed rule reaches macro utility 0.2639
+normally, versus 0.1433 for the best validation-selected threshold policy under
+the same utility; the action rule is not constrained to the latter policies'
+nominal 0.80 answering target.
 `bayes_credal_table.tex` supplies Supplementary Table S23. The manifest records
 input hashes and the exact utility specification.
 

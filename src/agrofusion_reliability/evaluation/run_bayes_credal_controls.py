@@ -300,6 +300,13 @@ def evaluate_fold(
     test = (records["split"].to_numpy() == "test") & keep
     truth = records["target_label"].to_numpy().astype(str)[test]
     seed_test = seed_probabilities[:, test, :]
+    seed_folders = sorted(
+        input_dir.glob(f"seed_*/{fold}"), key=lambda path: int(path.parent.name[5:])
+    )
+    seed_values = [int(path.parent.name[5:]) for path in seed_folders]
+    if 42 not in seed_values:
+        raise ValueError(f"Seed 42 posterior is unavailable for {fold}")
+    seed_42_test = seed_test[seed_values.index(42)]
     point_posterior = seed_test.mean(axis=0)
     summary_rows, class_rows = [], []
     for gamma in gammas:
@@ -312,6 +319,9 @@ def evaluate_fold(
             ),
             "macro_adjusted_bayes": macro_bayes_actions(
                 classes, point_posterior, priors, gamma, wrong_penalty
+            ),
+            "macro_adjusted_bayes_seed42": macro_bayes_actions(
+                classes, seed_42_test, priors, gamma, wrong_penalty
             ),
             "macro_adjusted_credal": macro_credal_actions(
                 classes, seed_test, priors, gamma, wrong_penalty
@@ -327,7 +337,9 @@ def evaluate_fold(
                     "policy": policy,
                     "gamma": gamma,
                     "wrong_penalty": wrong_penalty,
-                    "n_seeds": seed_probabilities.shape[0],
+                    "n_seeds": 1
+                    if policy == "macro_adjusted_bayes_seed42"
+                    else seed_probabilities.shape[0],
                     "n_test": len(truth),
                     "macro_answered_coverage": summary["macro_coverage"],
                     "macro_correct_emitted_coverage": summary[
@@ -362,6 +374,7 @@ def evaluate_fold(
     }
     coarse = seed_test[:, :, np.char.str_len(classes) == 1].sum(axis=2)
     metadata = {
+        "seed_values": seed_values,
         "family_training_counts": {
             family: training_counts[family]
             for family in classes[np.char.str_len(classes) == 2]
@@ -377,11 +390,23 @@ def evaluate_fold(
 
 
 def write_latex(rows: list[dict], destination: Path) -> None:
-    selected = [row for row in rows if row["gamma"] in {0.25, 0.5, 0.75}]
+    selected = [
+        row
+        for row in rows
+        if (
+            row["policy"] != "macro_adjusted_bayes_seed42"
+            and row["gamma"] in {0.25, 0.5, 0.75}
+        )
+        or (
+            row["policy"] == "macro_adjusted_bayes_seed42"
+            and row["gamma"] == 0.5
+        )
+    ]
     names = {
         "posterior_mean_bayes": "Posterior-mean Bayes",
         "seed_envelope_credal": "Seed-envelope $\\Gamma$-maximin",
         "macro_adjusted_bayes": "Macro-adjusted Bayes",
+        "macro_adjusted_bayes_seed42": "Macro-adjusted Bayes (seed 42)",
         "macro_adjusted_credal": "Macro-adjusted $\\Gamma$-maximin",
     }
     folds = {"normal": "Normal", "ecoregion_fold_4": "Ecoregion fold 4"}
@@ -389,7 +414,7 @@ def write_latex(rows: list[dict], destination: Path) -> None:
         r"\begin{table}[htbp]",
         r"\centering\scriptsize",
         r"\setlength{\tabcolsep}{2.8pt}",
-        r"\caption{Posterior Bayes and seed-envelope credal controls for $\lambda=1$. Macro-adjusted rules divide the 13 evaluated family probabilities by their training priors before applying the action utility; the three coarsely annotated B/E training records are excluded from that adjustment. Point rules use the mean of five seed posteriors; credal rules use the seed extremes. Test labels enter evaluation only. $\bar U$ is realized class-averaged utility.}",
+        r"\caption{Posterior Bayes and seed-envelope credal controls for $\lambda=1$. Macro-adjusted rules divide the 13 evaluated family probabilities by their training priors before applying the action utility; the three coarsely annotated B/E training records are excluded from that adjustment. Point rules use the mean of five seed posteriors except for the explicitly marked seed-42 row; credal rules use the seed extremes. Test labels enter evaluation only. $\bar U$ is realized class-averaged utility.}",
         r"\label{tab:supp-bayes-credal}",
         r"\begin{tabular}{llrrrrrrr}",
         r"\toprule",
@@ -460,7 +485,7 @@ def main() -> None:
                 "input_sha256": hashes,
                 "gammas": DEFAULT_GAMMAS,
                 "wrong_penalty": args.wrong_penalty,
-                "point_rule": "Bayes action from the arithmetic mean of five seed posteriors",
+                "point_rule": "Bayes action from the arithmetic mean of five seed posteriors, with an additional seed-42 macro-adjusted control",
                 "macro_adjustment": "divide evaluated family probabilities by training priors; exclude coarse B/E annotation classes",
                 "fold_metadata": fold_metadata,
                 "credal_set": "convex hull of five seed posteriors for each record",

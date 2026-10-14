@@ -15,7 +15,9 @@ The decision analysis also evaluates pooled-posterior and training-prior-adjuste
 Bayes actions, together with Gamma-maximin controls over five seed-specific
 posteriors. The prior-adjusted rule targets class-averaged utility over the 13
 evaluated families; its manifests retain the training counts and coarse-label
-mass excluded from that adjustment.
+mass excluded from that adjustment. A seed-42-only control separates the effect
+of prior-adjusted action selection from posterior ensembling when comparing the
+rule with the seed-42 threshold policies.
 
 ## Dataset
 

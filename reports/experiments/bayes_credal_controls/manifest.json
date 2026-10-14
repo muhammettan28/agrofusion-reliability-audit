@@ -30,10 +30,17 @@
     1.0
   ],
   "wrong_penalty": 1.0,
-  "point_rule": "Bayes action from the arithmetic mean of five seed posteriors",
+  "point_rule": "Bayes action from the arithmetic mean of five seed posteriors, with an additional seed-42 macro-adjusted control",
   "macro_adjustment": "divide evaluated family probabilities by training priors; exclude coarse B/E annotation classes",
   "fold_metadata": {
     "normal": {
+      "seed_values": [
+        7,
+        17,
+        42,
+        83,
+        101
+      ],
       "family_training_counts": {
         "B1": 50005,
         "B2": 3875,
@@ -57,6 +64,13 @@
       "coarse_posterior_mass_max": 0.00010160873353015631
     },
     "ecoregion_fold_4": {
+      "seed_values": [
+        7,
+        17,
+        42,
+        83,
+        101
+      ],
       "family_training_counts": {
         "B1": 45305,
         "B2": 4595,
